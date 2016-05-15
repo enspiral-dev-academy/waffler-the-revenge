@@ -1,11 +1,7 @@
-#!/usr/bin/env node
-
 import minimist from 'minimist'
+import push from './push'
 
-function waffle() {
-  const argv = minimist(process.argv)
-  const action = argv._[2]
-  const token = process.env['WTR_OAUTH_TOKEN']
+function help() {
   const help = `
       Usage
         $ wtr <action>
@@ -20,7 +16,30 @@ function waffle() {
         $ wtr push --sprint 4 kereru-2016
         $ wtr push -s 8 --cohort nikau-2016
   `
-  console.log(help)
+  console.log(help);
+}
+
+function waffle() {
+  const argv = minimist(process.argv, {
+    alias: {
+      s: 'sprint',
+      c: 'cohort'
+    },
+    string: [
+      'action',
+      'cohort'
+    ]
+  })
+
+  const action = argv._[2]
+  switch (action) {
+    case 'push': 
+      push(argv.sprint, argv.cohort)
+      break
+
+    default:
+      help()
+  }
 }
 
 export default waffle
