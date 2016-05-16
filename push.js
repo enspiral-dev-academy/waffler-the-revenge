@@ -5,6 +5,7 @@ function getTeam (client, cohort, next) {
   client.org(cohort)
     .teams((err, teams) => {
       if (err) {
+        console.log(err.message)
         return next(new Error(`Couldn't get teams for cohort ${cohort}.`))
       }
       const team = teams.find((t) => {
@@ -80,7 +81,7 @@ function postAssignment (client, sprint, cohort, student, assignment, next) {
     .issue({
       title: title,
       body: body,
-      assigneee: student,
+      assignee: student,
       labels: [`sprint-${sprint}`]
     }, (err, issue) => {
       if (err) {
@@ -98,6 +99,7 @@ function push (sprint, cohort) {
 
   const client = github.client(process.env['WTR_OAUTH_TOKEN']);
 
+  console.log(`Pushing sprint ${sprint} assignments to '${cohort}'...`)
   getTeam(client, cohort, (err, team) => {
     if (err) {
       console.error(err.message)
@@ -114,7 +116,7 @@ function push (sprint, cohort) {
           console.error(err.message)
           return
         }
-        assignments.forEach((assignment) => {
+        assignments.forEach((assignment, i) => {
           getAssignmentFile(client, assignment, (err, file) => {
             if (err) {
               console.error(err.message)
@@ -128,14 +130,15 @@ function push (sprint, cohort) {
                 }
                 return
               })
-              console.log(`Assignments pushed for ${member}.`)
             })
+            if (i === 0) {
+              console.log(`Assignments pushed for ${member}.`)
+            }
           })
         })
       })
     })
   })
-  console.log(`Pushing sprint ${sprint} assignments to '${cohort}'...`)
 }
 
 export default push
