@@ -26,17 +26,21 @@ function getTeamMembers (client, team, cb) {
     })
 }
 
-function isStudent (client, team, username) {
-  return new Promise((resolve, reject) => {
-    client.team(team)
-      .getMembership(username, (err, status) => {
-        if (err) {
-          console.error(`Couldn't check user \`${username}\`'s role in the team.`)
-          return reject()
-        }
-        return resolve(status)
-      })
-  })
+function getAssignments (client, sprint, cb) {
+  client.repo('dev-academy-programme/curriculum-private')
+    .contents('assignments', (err, assignments) => {
+      if (err) {
+        console.error(`Couldn't get the assignments from the curriculum repo.`)
+        return
+      }
+      if (assignments.length === 0) {
+        console.error(`No assignments found for that sprint.`)
+        return
+      }
+      cb(assignments.map((assignment) => {
+        return assignment.path
+      }))
+    })
 }
 
 function push (sprint, cohort) {
@@ -53,14 +57,7 @@ function push (sprint, cohort) {
       return
     }
     getTeamMembers(client, team.id, (members) => {
-      //members = members.filter((member) => {
-        //return isStudent(member)
-      //})
-      members.forEach((member) => {
-        Promise.all(isStudent(client, team.id, member))
-          .then((filtered) => {
-            console.log(filtered)
-          }
+      getAssignments(client, sprint, (assignments) => {
       })
     })
   })
