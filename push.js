@@ -1,5 +1,5 @@
-import getAssignments from './getAssignments'
-import getStudents from './getStudents'
+import getAssignments from './assignments'
+import getStudents from './students'
 import postAssignments from './postAssignments'
 
 function push (sprint, cohort) {
