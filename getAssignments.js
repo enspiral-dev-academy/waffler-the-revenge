@@ -1,3 +1,5 @@
+import github from 'octonode'
+
 function matchSprint (sprint, assignment) {
   if (assignment.split('-')[0] === 'p') {
     return true
@@ -10,7 +12,7 @@ function matchSprint (sprint, assignment) {
   return sprint === n
 }
 
-function getAssignmentFile (client, assignment, next) {
+function getAssignmentFile (assignment, next) {
   return new Promise((resolve, reject) => {
     client.repo('dev-academy-programme/curriculum-private')
       .contents(`${assignment}/README.md`, (err, file) => {
@@ -22,13 +24,16 @@ function getAssignmentFile (client, assignment, next) {
   })
 }
 
-function getAssignmentFiles (client, assignments) {
+function getAssignmentFiles (assignments) {
+  const client = github.client(process.env['WTR_OAUTH_TOKEN']);
   return Promise.resolve(assignments)
   //return Promise.all([
   //])
 }
 
-function getAssignmentList (client, sprint) {
+function getAssignmentList (sprint) {
+  const client = github.client(process.env['WTR_OAUTH_TOKEN']);
+
   return new Promise((resolve, reject) => {
     client.repo('dev-academy-programme/curriculum-private')
       .contents('assignments', (err, assignments) => {
@@ -56,14 +61,10 @@ function sortAndProcess (assignments) {
   return assignments
 }
 
-function getAssignments (client, sprint) {
-  console.log(`Getting assignment list for sprint ${1}...`)
-  return new Promise((resolve, reject) => {
-    return getAssignmentList(client, sprint)
-  })
-    .then((assignments) => {
-      return getAssignmentFiles(client, assignments)      
-    })
+function getAssignments (sprint) {
+  console.log(`Getting assignments...`)
+  return getAssignmentList(sprint)
+    .then(getAssignmentFiles)
     .then(sortAndProcess)
 }
 

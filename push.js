@@ -1,5 +1,3 @@
-import github from 'octonode'
-
 import getAssignments from './getAssignments'
 import getStudents from './getStudents'
 import postAssignments from './postAssignments'
@@ -10,23 +8,18 @@ function push (sprint, cohort) {
     return
   }
 
-  const client = github.client(process.env['WTR_OAUTH_TOKEN']);
-
   console.log(`Pushing sprint ${sprint} assignments to '${cohort}'...`)
 
   Promise.all([
-    getAssignments(client, sprint),
-    getStudents(client, cohort)
+    getAssignments(sprint),
+    getStudents(cohort)
   ])
     .then(([assignments, students]) => {
-      return postAssignments(client, assignments, students) 
+      console.log(assignments, students)
+      return postAssignments(assignments, students) 
     })
-    .then((result) => {
-      console.log(result)
-    })
-    .catch((err) => {
-      console.error(err)
-    })
+    .then(console.log)
+    .catch(console.error)
 }
 
 export default push
