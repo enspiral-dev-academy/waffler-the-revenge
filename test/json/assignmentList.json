@@ -1,0 +1,1202 @@
+[
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/ea490664e60af20f466f5ce01898f02d5358e72d",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/1.0-how-to-waffle",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/1.0-how-to-waffle?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/ea490664e60af20f466f5ce01898f02d5358e72d",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/1.0-how-to-waffle",
+        "name": "1.0-how-to-waffle",
+        "path": "assignments/1.0-how-to-waffle",
+        "sha": "ea490664e60af20f466f5ce01898f02d5358e72d",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/1.0-how-to-waffle?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/cdc35b90da769b7d1bd047f9f417c0d5bcc922a0",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/1.1-track-time",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/1.1-track-time?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/cdc35b90da769b7d1bd047f9f417c0d5bcc922a0",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/1.1-track-time",
+        "name": "1.1-track-time",
+        "path": "assignments/1.1-track-time",
+        "sha": "cdc35b90da769b7d1bd047f9f417c0d5bcc922a0",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/1.1-track-time?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/26617f1bce5150d95e069fcee8434e61e6e40af2",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/1.2-command-line-and-github",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/1.2-command-line-and-github?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/26617f1bce5150d95e069fcee8434e61e6e40af2",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/1.2-command-line-and-github",
+        "name": "1.2-command-line-and-github",
+        "path": "assignments/1.2-command-line-and-github",
+        "sha": "26617f1bce5150d95e069fcee8434e61e6e40af2",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/1.2-command-line-and-github?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/de32a65313550c19f83edec474efed56736dd05c",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/1.3-create-website-blog",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/1.3-create-website-blog?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/de32a65313550c19f83edec474efed56736dd05c",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/1.3-create-website-blog",
+        "name": "1.3-create-website-blog",
+        "path": "assignments/1.3-create-website-blog",
+        "sha": "de32a65313550c19f83edec474efed56736dd05c",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/1.3-create-website-blog?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/835495fb029708c7727edb1fba4800482bbd3757",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/1.4-introduce-yourself",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/1.4-introduce-yourself?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/835495fb029708c7727edb1fba4800482bbd3757",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/1.4-introduce-yourself",
+        "name": "1.4-introduce-yourself",
+        "path": "assignments/1.4-introduce-yourself",
+        "sha": "835495fb029708c7727edb1fba4800482bbd3757",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/1.4-introduce-yourself?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/04040500f19895d894ae48a79dcf05833cf2050d",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/1.5-reflection",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/1.5-reflection?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/04040500f19895d894ae48a79dcf05833cf2050d",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/1.5-reflection",
+        "name": "1.5-reflection",
+        "path": "assignments/1.5-reflection",
+        "sha": "04040500f19895d894ae48a79dcf05833cf2050d",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/1.5-reflection?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/70c712c200785861a3800132eb7a3af48512735c",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/1.6-u1w1-feedback-form",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/1.6-u1w1-feedback-form?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/70c712c200785861a3800132eb7a3af48512735c",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/1.6-u1w1-feedback-form",
+        "name": "1.6-u1w1-feedback-form",
+        "path": "assignments/1.6-u1w1-feedback-form",
+        "sha": "70c712c200785861a3800132eb7a3af48512735c",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/1.6-u1w1-feedback-form?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/a2fc3b69b19ad80eacf76c91a6c5a585f79bcb9f",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.0-udacity-html-css-course-1",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.0-udacity-html-css-course-1?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/a2fc3b69b19ad80eacf76c91a6c5a585f79bcb9f",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.0-udacity-html-css-course-1",
+        "name": "2.0-udacity-html-css-course-1",
+        "path": "assignments/2.0-udacity-html-css-course-1",
+        "sha": "a2fc3b69b19ad80eacf76c91a6c5a585f79bcb9f",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.0-udacity-html-css-course-1?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/26fdf874592f1a1fffd2dd70fed1df16cf352c40",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.1-udacity-practice",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.1-udacity-practice?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/26fdf874592f1a1fffd2dd70fed1df16cf352c40",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.1-udacity-practice",
+        "name": "2.1-udacity-practice",
+        "path": "assignments/2.1-udacity-practice",
+        "sha": "26fdf874592f1a1fffd2dd70fed1df16cf352c40",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.1-udacity-practice?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/86bd4beab27048acad1770d3e5404cb0baf4e4c7",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.2-udacity-blog-1",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.2-udacity-blog-1?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/86bd4beab27048acad1770d3e5404cb0baf4e4c7",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.2-udacity-blog-1",
+        "name": "2.2-udacity-blog-1",
+        "path": "assignments/2.2-udacity-blog-1",
+        "sha": "86bd4beab27048acad1770d3e5404cb0baf4e4c7",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.2-udacity-blog-1?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/a10974f2f5a9c58bc7705dce7c0b31a986de42db",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.3-udacity-html-css-course-2",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.3-udacity-html-css-course-2?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/a10974f2f5a9c58bc7705dce7c0b31a986de42db",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.3-udacity-html-css-course-2",
+        "name": "2.3-udacity-html-css-course-2",
+        "path": "assignments/2.3-udacity-html-css-course-2",
+        "sha": "a10974f2f5a9c58bc7705dce7c0b31a986de42db",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.3-udacity-html-css-course-2?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/d3de2e395083f2185b63da0abe2cdc26467f3abd",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.4-udacity-blog-2",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.4-udacity-blog-2?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/d3de2e395083f2185b63da0abe2cdc26467f3abd",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.4-udacity-blog-2",
+        "name": "2.4-udacity-blog-2",
+        "path": "assignments/2.4-udacity-blog-2",
+        "sha": "d3de2e395083f2185b63da0abe2cdc26467f3abd",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.4-udacity-blog-2?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/b72c9998434e7decad8fc78658bb584082f15af0",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.5-technical-debt-html",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.5-technical-debt-html?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/b72c9998434e7decad8fc78658bb584082f15af0",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.5-technical-debt-html",
+        "name": "2.5-technical-debt-html",
+        "path": "assignments/2.5-technical-debt-html",
+        "sha": "b72c9998434e7decad8fc78658bb584082f15af0",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.5-technical-debt-html?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/b9f19c74bed323ee63cb6d2bac12a16ae489d0ae",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.6-cultural-blog",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.6-cultural-blog?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/b9f19c74bed323ee63cb6d2bac12a16ae489d0ae",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.6-cultural-blog",
+        "name": "2.6-cultural-blog",
+        "path": "assignments/2.6-cultural-blog",
+        "sha": "b9f19c74bed323ee63cb6d2bac12a16ae489d0ae",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.6-cultural-blog?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/926ff4cf447573c6dbd86dcb5f3177d0b0a37fe0",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.7-reflection",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.7-reflection?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/926ff4cf447573c6dbd86dcb5f3177d0b0a37fe0",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.7-reflection",
+        "name": "2.7-reflection",
+        "path": "assignments/2.7-reflection",
+        "sha": "926ff4cf447573c6dbd86dcb5f3177d0b0a37fe0",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.7-reflection?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/425537a8cbee7046d90f76868b3bc9142c93f782",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.8-u1w2-feedback-form",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.8-u1w2-feedback-form?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/425537a8cbee7046d90f76868b3bc9142c93f782",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/2.8-u1w2-feedback-form",
+        "name": "2.8-u1w2-feedback-form",
+        "path": "assignments/2.8-u1w2-feedback-form",
+        "sha": "425537a8cbee7046d90f76868b3bc9142c93f782",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/2.8-u1w2-feedback-form?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/ffe53c5a5dbfdeadc9f4ae85a97f339903b1b7c0",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/3.0-redesign-your-site",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/3.0-redesign-your-site?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/ffe53c5a5dbfdeadc9f4ae85a97f339903b1b7c0",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/3.0-redesign-your-site",
+        "name": "3.0-redesign-your-site",
+        "path": "assignments/3.0-redesign-your-site",
+        "sha": "ffe53c5a5dbfdeadc9f4ae85a97f339903b1b7c0",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/3.0-redesign-your-site?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/bea6e9485b9a1c86e3161aaf8441702536b851ab",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/3.1-build-your-site",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/3.1-build-your-site?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/bea6e9485b9a1c86e3161aaf8441702536b851ab",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/3.1-build-your-site",
+        "name": "3.1-build-your-site",
+        "path": "assignments/3.1-build-your-site",
+        "sha": "bea6e9485b9a1c86e3161aaf8441702536b851ab",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/3.1-build-your-site?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/4d3d09d9bed4459f01f0a53dc900fd902a1bc7cb",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/3.2-technical-blog",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/3.2-technical-blog?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/4d3d09d9bed4459f01f0a53dc900fd902a1bc7cb",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/3.2-technical-blog",
+        "name": "3.2-technical-blog",
+        "path": "assignments/3.2-technical-blog",
+        "sha": "4d3d09d9bed4459f01f0a53dc900fd902a1bc7cb",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/3.2-technical-blog?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/bf01de540cab0efa76cda9a977cf68e05378e399",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/3.3-cultural-blog",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/3.3-cultural-blog?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/bf01de540cab0efa76cda9a977cf68e05378e399",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/3.3-cultural-blog",
+        "name": "3.3-cultural-blog",
+        "path": "assignments/3.3-cultural-blog",
+        "sha": "bf01de540cab0efa76cda9a977cf68e05378e399",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/3.3-cultural-blog?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/a3e89eaa5cbd236a71f12d3b9e2c4dc295485f65",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/3.4-reflection",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/3.4-reflection?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/a3e89eaa5cbd236a71f12d3b9e2c4dc295485f65",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/3.4-reflection",
+        "name": "3.4-reflection",
+        "path": "assignments/3.4-reflection",
+        "sha": "a3e89eaa5cbd236a71f12d3b9e2c4dc295485f65",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/3.4-reflection?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/ac79113e5eadab8aa4a392fee92d95b4d3bb34ec",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/3.5-u1w3-feedback",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/3.5-u1w3-feedback?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/ac79113e5eadab8aa4a392fee92d95b4d3bb34ec",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/3.5-u1w3-feedback",
+        "name": "3.5-u1w3-feedback",
+        "path": "assignments/3.5-u1w3-feedback",
+        "sha": "ac79113e5eadab8aa4a392fee92d95b4d3bb34ec",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/3.5-u1w3-feedback?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/7b12e08128209ae2c4c47524f2d3c97ae84a2a50",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/4.1-codecademy-javascript-basics",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/4.1-codecademy-javascript-basics?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/7b12e08128209ae2c4c47524f2d3c97ae84a2a50",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/4.1-codecademy-javascript-basics",
+        "name": "4.1-codecademy-javascript-basics",
+        "path": "assignments/4.1-codecademy-javascript-basics",
+        "sha": "7b12e08128209ae2c4c47524f2d3c97ae84a2a50",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/4.1-codecademy-javascript-basics?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/7b345d54a15ef96a32cc4bd7c2729185dc2cfb85",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/4.2-js-intro-free-code-camp",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/4.2-js-intro-free-code-camp?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/7b345d54a15ef96a32cc4bd7c2729185dc2cfb85",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/4.2-js-intro-free-code-camp",
+        "name": "4.2-js-intro-free-code-camp",
+        "path": "assignments/4.2-js-intro-free-code-camp",
+        "sha": "7b345d54a15ef96a32cc4bd7c2729185dc2cfb85",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/4.2-js-intro-free-code-camp?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/897b4710894d6633a2a5ba4483382770fde31daf",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/4.3-technical-blog",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/4.3-technical-blog?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/897b4710894d6633a2a5ba4483382770fde31daf",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/4.3-technical-blog",
+        "name": "4.3-technical-blog",
+        "path": "assignments/4.3-technical-blog",
+        "sha": "897b4710894d6633a2a5ba4483382770fde31daf",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/4.3-technical-blog?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/b45ca15e232ab61fc6b273e3c45abaaa92f9ccef",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/4.4-cultural-blog",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/4.4-cultural-blog?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/b45ca15e232ab61fc6b273e3c45abaaa92f9ccef",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/4.4-cultural-blog",
+        "name": "4.4-cultural-blog",
+        "path": "assignments/4.4-cultural-blog",
+        "sha": "b45ca15e232ab61fc6b273e3c45abaaa92f9ccef",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/4.4-cultural-blog?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/77ab3fa5480cc60915672a47298ca54e0aa609a6",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/4.5-reflection",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/4.5-reflection?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/77ab3fa5480cc60915672a47298ca54e0aa609a6",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/4.5-reflection",
+        "name": "4.5-reflection",
+        "path": "assignments/4.5-reflection",
+        "sha": "77ab3fa5480cc60915672a47298ca54e0aa609a6",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/4.5-reflection?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/9797f30a5e750c805dcff504825fb9e1b701b37c",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/4.6-u2w4-feedback",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/4.6-u2w4-feedback?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/9797f30a5e750c805dcff504825fb9e1b701b37c",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/4.6-u2w4-feedback",
+        "name": "4.6-u2w4-feedback",
+        "path": "assignments/4.6-u2w4-feedback",
+        "sha": "9797f30a5e750c805dcff504825fb9e1b701b37c",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/4.6-u2w4-feedback?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/32cefce49a8c7e7aa57aa989370419f78ac9448a",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/5.0-linking-HTML-CSS-JS",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/5.0-linking-HTML-CSS-JS?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/32cefce49a8c7e7aa57aa989370419f78ac9448a",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/5.0-linking-HTML-CSS-JS",
+        "name": "5.0-linking-HTML-CSS-JS",
+        "path": "assignments/5.0-linking-HTML-CSS-JS",
+        "sha": "32cefce49a8c7e7aa57aa989370419f78ac9448a",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/5.0-linking-HTML-CSS-JS?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/757e9a9a393204cde82c759ca845850db04df1ab",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/5.1-eloquent-js-program-structure-ch2",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/5.1-eloquent-js-program-structure-ch2?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/757e9a9a393204cde82c759ca845850db04df1ab",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/5.1-eloquent-js-program-structure-ch2",
+        "name": "5.1-eloquent-js-program-structure-ch2",
+        "path": "assignments/5.1-eloquent-js-program-structure-ch2",
+        "sha": "757e9a9a393204cde82c759ca845850db04df1ab",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/5.1-eloquent-js-program-structure-ch2?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/c2daf056627af592c78228f61818e05d50c3fbf3",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/5.2-racer-game",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/5.2-racer-game?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/c2daf056627af592c78228f61818e05d50c3fbf3",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/5.2-racer-game",
+        "name": "5.2-racer-game",
+        "path": "assignments/5.2-racer-game",
+        "sha": "c2daf056627af592c78228f61818e05d50c3fbf3",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/5.2-racer-game?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/05cae68ae5bafac37fcdde69c46303af504d4947",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/5.3-cultural-blog",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/5.3-cultural-blog?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/05cae68ae5bafac37fcdde69c46303af504d4947",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/5.3-cultural-blog",
+        "name": "5.3-cultural-blog",
+        "path": "assignments/5.3-cultural-blog",
+        "sha": "05cae68ae5bafac37fcdde69c46303af504d4947",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/5.3-cultural-blog?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/348a93e13ec5af5eae4949731d428ce01d09b37f",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/5.4-technical-blog",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/5.4-technical-blog?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/348a93e13ec5af5eae4949731d428ce01d09b37f",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/5.4-technical-blog",
+        "name": "5.4-technical-blog",
+        "path": "assignments/5.4-technical-blog",
+        "sha": "348a93e13ec5af5eae4949731d428ce01d09b37f",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/5.4-technical-blog?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/659c947cfefbfaa4f0e20593c6cbd17287495e81",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/5.5-reflection",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/5.5-reflection?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/659c947cfefbfaa4f0e20593c6cbd17287495e81",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/5.5-reflection",
+        "name": "5.5-reflection",
+        "path": "assignments/5.5-reflection",
+        "sha": "659c947cfefbfaa4f0e20593c6cbd17287495e81",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/5.5-reflection?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/fbed74860ca1560b8d019b8876c225756cee7042",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/5.6-u2w5-feedback",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/5.6-u2w5-feedback?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/fbed74860ca1560b8d019b8876c225756cee7042",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/5.6-u2w5-feedback",
+        "name": "5.6-u2w5-feedback",
+        "path": "assignments/5.6-u2w5-feedback",
+        "sha": "fbed74860ca1560b8d019b8876c225756cee7042",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/5.6-u2w5-feedback?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/93c0c056437a77682a0e7fd6b7dae21edef7e194",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/6.1-udacity-javascript-basics",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/6.1-udacity-javascript-basics?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/93c0c056437a77682a0e7fd6b7dae21edef7e194",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/6.1-udacity-javascript-basics",
+        "name": "6.1-udacity-javascript-basics",
+        "path": "assignments/6.1-udacity-javascript-basics",
+        "sha": "93c0c056437a77682a0e7fd6b7dae21edef7e194",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/6.1-udacity-javascript-basics?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/2fa78f65f9c6716a44388636809010d76b4d00f3",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/6.2-technical-blog",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/6.2-technical-blog?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/2fa78f65f9c6716a44388636809010d76b4d00f3",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/6.2-technical-blog",
+        "name": "6.2-technical-blog",
+        "path": "assignments/6.2-technical-blog",
+        "sha": "2fa78f65f9c6716a44388636809010d76b4d00f3",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/6.2-technical-blog?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/4f9175ced0bf25b3e3211456074956077b0fce73",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/6.3-cultural-blog",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/6.3-cultural-blog?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/4f9175ced0bf25b3e3211456074956077b0fce73",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/6.3-cultural-blog",
+        "name": "6.3-cultural-blog",
+        "path": "assignments/6.3-cultural-blog",
+        "sha": "4f9175ced0bf25b3e3211456074956077b0fce73",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/6.3-cultural-blog?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/cdec793c5bb4696fdfd9150ca30e5a5535c65472",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/6.4-reflection",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/6.4-reflection?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/cdec793c5bb4696fdfd9150ca30e5a5535c65472",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/6.4-reflection",
+        "name": "6.4-reflection",
+        "path": "assignments/6.4-reflection",
+        "sha": "cdec793c5bb4696fdfd9150ca30e5a5535c65472",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/6.4-reflection?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/6f1bdf57b01ed8b77c5d2e5781bf1b4cdd006956",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/6.5-u2w6-feedback",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/6.5-u2w6-feedback?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/6f1bdf57b01ed8b77c5d2e5781bf1b4cdd006956",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/6.5-u2w6-feedback",
+        "name": "6.5-u2w6-feedback",
+        "path": "assignments/6.5-u2w6-feedback",
+        "sha": "6f1bdf57b01ed8b77c5d2e5781bf1b4cdd006956",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/6.5-u2w6-feedback?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/a30e7b372146ebfc9e94043ac2c302246acf52bc",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/7.0-build-quote-generator",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/7.0-build-quote-generator?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/a30e7b372146ebfc9e94043ac2c302246acf52bc",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/7.0-build-quote-generator",
+        "name": "7.0-build-quote-generator",
+        "path": "assignments/7.0-build-quote-generator",
+        "sha": "a30e7b372146ebfc9e94043ac2c302246acf52bc",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/7.0-build-quote-generator?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/bd40d6b193d2b7fe3c6c4d9c2ded61e567b3c2ea",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/7.1-functional-workshop-1",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/7.1-functional-workshop-1?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/bd40d6b193d2b7fe3c6c4d9c2ded61e567b3c2ea",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/7.1-functional-workshop-1",
+        "name": "7.1-functional-workshop-1",
+        "path": "assignments/7.1-functional-workshop-1",
+        "sha": "bd40d6b193d2b7fe3c6c4d9c2ded61e567b3c2ea",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/7.1-functional-workshop-1?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/e4a70e570ef8157f552e874631bd78c82ddd5fb5",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/7.2-algorithm-scripting-js",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/7.2-algorithm-scripting-js?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/e4a70e570ef8157f552e874631bd78c82ddd5fb5",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/7.2-algorithm-scripting-js",
+        "name": "7.2-algorithm-scripting-js",
+        "path": "assignments/7.2-algorithm-scripting-js",
+        "sha": "e4a70e570ef8157f552e874631bd78c82ddd5fb5",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/7.2-algorithm-scripting-js?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/a1938105b603381be0f5b64b8cea0667838038c3",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/7.3-eloquent-js-functions-chapter",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/7.3-eloquent-js-functions-chapter?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/a1938105b603381be0f5b64b8cea0667838038c3",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/7.3-eloquent-js-functions-chapter",
+        "name": "7.3-eloquent-js-functions-chapter",
+        "path": "assignments/7.3-eloquent-js-functions-chapter",
+        "sha": "a1938105b603381be0f5b64b8cea0667838038c3",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/7.3-eloquent-js-functions-chapter?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/b0fe899e69c1a86e7ab61d32a6f02c6fbe82dacc",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/7.4-cultural-blog",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/7.4-cultural-blog?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/b0fe899e69c1a86e7ab61d32a6f02c6fbe82dacc",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/7.4-cultural-blog",
+        "name": "7.4-cultural-blog",
+        "path": "assignments/7.4-cultural-blog",
+        "sha": "b0fe899e69c1a86e7ab61d32a6f02c6fbe82dacc",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/7.4-cultural-blog?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/6b0aa72328770f4ff56d7559a4a28353a09566a7",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/7.5-reflection",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/7.5-reflection?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/6b0aa72328770f4ff56d7559a4a28353a09566a7",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/7.5-reflection",
+        "name": "7.5-reflection",
+        "path": "assignments/7.5-reflection",
+        "sha": "6b0aa72328770f4ff56d7559a4a28353a09566a7",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/7.5-reflection?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/69542b6cca1e151b6769e0fa17bca243cb902be2",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/7.6-u3w7-feedback",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/7.6-u3w7-feedback?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/69542b6cca1e151b6769e0fa17bca243cb902be2",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/7.6-u3w7-feedback",
+        "name": "7.6-u3w7-feedback",
+        "path": "assignments/7.6-u3w7-feedback",
+        "sha": "69542b6cca1e151b6769e0fa17bca243cb902be2",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/7.6-u3w7-feedback?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/44c9cdf6d3d629425991c560f07c3b5ee3d22320",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/8.1-build-a-calculator",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/8.1-build-a-calculator?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/44c9cdf6d3d629425991c560f07c3b5ee3d22320",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/8.1-build-a-calculator",
+        "name": "8.1-build-a-calculator",
+        "path": "assignments/8.1-build-a-calculator",
+        "sha": "44c9cdf6d3d629425991c560f07c3b5ee3d22320",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/8.1-build-a-calculator?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/8b84c69b3434a7ee5e833956bec05612b7e2f45d",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/8.2-racer-features",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/8.2-racer-features?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/8b84c69b3434a7ee5e833956bec05612b7e2f45d",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/8.2-racer-features",
+        "name": "8.2-racer-features",
+        "path": "assignments/8.2-racer-features",
+        "sha": "8b84c69b3434a7ee5e833956bec05612b7e2f45d",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/8.2-racer-features?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/e3e989e44120bc4dfafaa6173e13010d994347b7",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/8.3-technical-blog",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/8.3-technical-blog?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/e3e989e44120bc4dfafaa6173e13010d994347b7",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/8.3-technical-blog",
+        "name": "8.3-technical-blog",
+        "path": "assignments/8.3-technical-blog",
+        "sha": "e3e989e44120bc4dfafaa6173e13010d994347b7",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/8.3-technical-blog?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/f384def48378af4e9d6da1106fc95f9d9b1a2b89",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/8.4-cultural-blog",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/8.4-cultural-blog?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/f384def48378af4e9d6da1106fc95f9d9b1a2b89",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/8.4-cultural-blog",
+        "name": "8.4-cultural-blog",
+        "path": "assignments/8.4-cultural-blog",
+        "sha": "f384def48378af4e9d6da1106fc95f9d9b1a2b89",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/8.4-cultural-blog?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/972773c95bf01db9627fd9151374923196924193",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/8.5-reflection",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/8.5-reflection?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/972773c95bf01db9627fd9151374923196924193",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/8.5-reflection",
+        "name": "8.5-reflection",
+        "path": "assignments/8.5-reflection",
+        "sha": "972773c95bf01db9627fd9151374923196924193",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/8.5-reflection?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/da99952b80d89ef9c9bb7a63db10fb5cddb5815c",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/8.6-u3w8-feedback",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/8.6-u3w8-feedback?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/da99952b80d89ef9c9bb7a63db10fb5cddb5815c",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/8.6-u3w8-feedback",
+        "name": "8.6-u3w8-feedback",
+        "path": "assignments/8.6-u3w8-feedback",
+        "sha": "da99952b80d89ef9c9bb7a63db10fb5cddb5815c",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/8.6-u3w8-feedback?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/234740db71086c94b0fa9a2cf36073bf0c918ea3",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/9.0-phase-0-review",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/9.0-phase-0-review?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/234740db71086c94b0fa9a2cf36073bf0c918ea3",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/9.0-phase-0-review",
+        "name": "9.0-phase-0-review",
+        "path": "assignments/9.0-phase-0-review",
+        "sha": "234740db71086c94b0fa9a2cf36073bf0c918ea3",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/9.0-phase-0-review?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/19d1dff6c2c16cf1b461b5ed2bf42af12bc4121e",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/9.1-cultural-blog",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/9.1-cultural-blog?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/19d1dff6c2c16cf1b461b5ed2bf42af12bc4121e",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/9.1-cultural-blog",
+        "name": "9.1-cultural-blog",
+        "path": "assignments/9.1-cultural-blog",
+        "sha": "19d1dff6c2c16cf1b461b5ed2bf42af12bc4121e",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/9.1-cultural-blog?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/fa61f624d01f595febc5c9e5b89ee7c6d3ed3180",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/9.2-reflection",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/9.2-reflection?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/fa61f624d01f595febc5c9e5b89ee7c6d3ed3180",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/9.2-reflection",
+        "name": "9.2-reflection",
+        "path": "assignments/9.2-reflection",
+        "sha": "fa61f624d01f595febc5c9e5b89ee7c6d3ed3180",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/9.2-reflection?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/1b28e655f6de2a4bf88426f3881aa7f7f18c197a",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/9.3-u3w9-feedback",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/9.3-u3w9-feedback?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/1b28e655f6de2a4bf88426f3881aa7f7f18c197a",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/9.3-u3w9-feedback",
+        "name": "9.3-u3w9-feedback",
+        "path": "assignments/9.3-u3w9-feedback",
+        "sha": "1b28e655f6de2a4bf88426f3881aa7f7f18c197a",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/9.3-u3w9-feedback?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/blobs/3ffaea1db4623bdfceca74fc3385a94e3e956afa",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/blob/master/assignments/9.4-competency-checklist",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/9.4-competency-checklist?ref=master"
+        },
+        "download_url": "https://raw.githubusercontent.com/dev-academy-programme/curriculum-private/master/assignments/9.4-competency-checklist?token=ASeG0YGeOAxb3t0tH8LTq-AsbZoXDmzdks5XO-H-wA%3D%3D",
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/blobs/3ffaea1db4623bdfceca74fc3385a94e3e956afa",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/blob/master/assignments/9.4-competency-checklist",
+        "name": "9.4-competency-checklist",
+        "path": "assignments/9.4-competency-checklist",
+        "sha": "3ffaea1db4623bdfceca74fc3385a94e3e956afa",
+        "size": 3635,
+        "type": "file",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/9.4-competency-checklist?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/blob/master/assignments/README.md",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/README.md?ref=master"
+        },
+        "download_url": "https://raw.githubusercontent.com/dev-academy-programme/curriculum-private/master/assignments/README.md?token=ASeG0Szi_qmnFoEfVFRztTt1rBXZQx-Eks5XO-H-wA%3D%3D",
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/blob/master/assignments/README.md",
+        "name": "README.md",
+        "path": "assignments/README.md",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "size": 0,
+        "type": "file",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/README.md?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/ca725e9d742077d75c81206bc6301084baefe2b4",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/p-acct-group",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/p-acct-group?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/ca725e9d742077d75c81206bc6301084baefe2b4",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/p-acct-group",
+        "name": "p-acct-group",
+        "path": "assignments/p-acct-group",
+        "sha": "ca725e9d742077d75c81206bc6301084baefe2b4",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/p-acct-group?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/066394147d5438bc62efd8735870069479ed4948",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/p-check-ins",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/p-check-ins?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/066394147d5438bc62efd8735870069479ed4948",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/p-check-ins",
+        "name": "p-check-ins",
+        "path": "assignments/p-check-ins",
+        "sha": "066394147d5438bc62efd8735870069479ed4948",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/p-check-ins?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/d1b8152e4bdf6ebe34cbf4cd6fdfdd838931689c",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/p-read-overview",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/p-read-overview?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/d1b8152e4bdf6ebe34cbf4cd6fdfdd838931689c",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/p-read-overview",
+        "name": "p-read-overview",
+        "path": "assignments/p-read-overview",
+        "sha": "d1b8152e4bdf6ebe34cbf4cd6fdfdd838931689c",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/p-read-overview?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/5839073da83529ac76f1f70850045a4c2d34db2e",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/p-weekly-practice",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/p-weekly-practice?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/5839073da83529ac76f1f70850045a4c2d34db2e",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/p-weekly-practice",
+        "name": "p-weekly-practice",
+        "path": "assignments/p-weekly-practice",
+        "sha": "5839073da83529ac76f1f70850045a4c2d34db2e",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/p-weekly-practice?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/7663319d3a7e620b94552a8b2eb660be2c557069",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.4-personal-reflection",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.4-personal-reflection?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/7663319d3a7e620b94552a8b2eb660be2c557069",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.4-personal-reflection",
+        "name": "x.4-personal-reflection",
+        "path": "assignments/x.4-personal-reflection",
+        "sha": "7663319d3a7e620b94552a8b2eb660be2c557069",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.4-personal-reflection?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/f34ebef0c439d558bad1e035aaaa1b8dbac119cd",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-destroy-a-webpage",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-destroy-a-webpage?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/f34ebef0c439d558bad1e035aaaa1b8dbac119cd",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-destroy-a-webpage",
+        "name": "x.x-destroy-a-webpage",
+        "path": "assignments/x.x-destroy-a-webpage",
+        "sha": "f34ebef0c439d558bad1e035aaaa1b8dbac119cd",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-destroy-a-webpage?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/9140d11df86cfc7a531d2ec7a5a60a154d260ae7",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-enliven-your-site",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-enliven-your-site?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/9140d11df86cfc7a531d2ec7a5a60a154d260ae7",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-enliven-your-site",
+        "name": "x.x-enliven-your-site",
+        "path": "assignments/x.x-enliven-your-site",
+        "sha": "9140d11df86cfc7a531d2ec7a5a60a154d260ae7",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-enliven-your-site?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/0fc17fe6df7441271a1aad05ff88d6c555c8be54",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-functional-workshop-2",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-functional-workshop-2?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/0fc17fe6df7441271a1aad05ff88d6c555c8be54",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-functional-workshop-2",
+        "name": "x.x-functional-workshop-2",
+        "path": "assignments/x.x-functional-workshop-2",
+        "sha": "0fc17fe6df7441271a1aad05ff88d6c555c8be54",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-functional-workshop-2?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/bdb95a9ef097ff4b3ffb8523eb97ecba81877407",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-intro-to-TDD",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-intro-to-TDD?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/bdb95a9ef097ff4b3ffb8523eb97ecba81877407",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-intro-to-TDD",
+        "name": "x.x-intro-to-TDD",
+        "path": "assignments/x.x-intro-to-TDD",
+        "sha": "bdb95a9ef097ff4b3ffb8523eb97ecba81877407",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-intro-to-TDD?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/96c7ed65ce97a84c22c90ec7740beb1e280f4a41",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-racer-game",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-racer-game?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/96c7ed65ce97a84c22c90ec7740beb1e280f4a41",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-racer-game",
+        "name": "x.x-racer-game",
+        "path": "assignments/x.x-racer-game",
+        "sha": "96c7ed65ce97a84c22c90ec7740beb1e280f4a41",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-racer-game?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/e761bfcf30fe694d6e28f9253fc6902ee1433159",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-technical-blog-material",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-technical-blog-material?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/e761bfcf30fe694d6e28f9253fc6902ee1433159",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-technical-blog-material",
+        "name": "x.x-technical-blog-material",
+        "path": "assignments/x.x-technical-blog-material",
+        "sha": "e761bfcf30fe694d6e28f9253fc6902ee1433159",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-technical-blog-material?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/911baf422db64654ea4b2b30c9ce932927264bc6",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-tic-tac-toe-logic-planning",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-tic-tac-toe-logic-planning?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/911baf422db64654ea4b2b30c9ce932927264bc6",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-tic-tac-toe-logic-planning",
+        "name": "x.x-tic-tac-toe-logic-planning",
+        "path": "assignments/x.x-tic-tac-toe-logic-planning",
+        "sha": "911baf422db64654ea4b2b30c9ce932927264bc6",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-tic-tac-toe-logic-planning?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/a0c168826a0ac9710ab7874dcf683d6e9daa6004",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-tic-tac-toe-user-interface",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-tic-tac-toe-user-interface?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/a0c168826a0ac9710ab7874dcf683d6e9daa6004",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-tic-tac-toe-user-interface",
+        "name": "x.x-tic-tac-toe-user-interface",
+        "path": "assignments/x.x-tic-tac-toe-user-interface",
+        "sha": "a0c168826a0ac9710ab7874dcf683d6e9daa6004",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-tic-tac-toe-user-interface?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/6e9a9b480117f9fbb276e11ac40b2f0830b4d3d1",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-udacity-javascript-basics",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-udacity-javascript-basics?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/6e9a9b480117f9fbb276e11ac40b2f0830b4d3d1",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x.x-udacity-javascript-basics",
+        "name": "x.x-udacity-javascript-basics",
+        "path": "assignments/x.x-udacity-javascript-basics",
+        "sha": "6e9a9b480117f9fbb276e11ac40b2f0830b4d3d1",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x.x-udacity-javascript-basics?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/0dc224dbb2b2041d8af7732c04961a29374af968",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x7.2-algorithm-scripting-js",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x7.2-algorithm-scripting-js?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/0dc224dbb2b2041d8af7732c04961a29374af968",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x7.2-algorithm-scripting-js",
+        "name": "x7.2-algorithm-scripting-js",
+        "path": "assignments/x7.2-algorithm-scripting-js",
+        "sha": "0dc224dbb2b2041d8af7732c04961a29374af968",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x7.2-algorithm-scripting-js?ref=master"
+    },
+    {
+        "_links": {
+            "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/2a4798be0cdc11f69642b05fbd93ec15c5faf113",
+            "html": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x7.3-build-something-fun",
+            "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x7.3-build-something-fun?ref=master"
+        },
+        "download_url": null,
+        "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/trees/2a4798be0cdc11f69642b05fbd93ec15c5faf113",
+        "html_url": "https://github.com/dev-academy-programme/curriculum-private/tree/master/assignments/x7.3-build-something-fun",
+        "name": "x7.3-build-something-fun",
+        "path": "assignments/x7.3-build-something-fun",
+        "sha": "2a4798be0cdc11f69642b05fbd93ec15c5faf113",
+        "size": 0,
+        "type": "dir",
+        "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/x7.3-build-something-fun?ref=master"
+    }
+]
