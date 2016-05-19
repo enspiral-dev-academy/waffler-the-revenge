@@ -1,12 +1,10 @@
 import github from 'octonode'
 
-export default getAssignments
-
-function getAssignments (sprint) {
+export function get (sprint) {
   console.log(`Getting assignments...`)
-  return getAssignmentList(sprint)
-    .then(checkAssignments)
-    .then(getAssignmentFiles)
+  return getList(sprint)
+    .then(check)
+    .then(getFiles)
     .then(sortAndProcess)
 }
 
@@ -22,7 +20,7 @@ function matchSprint (sprint, assignment) {
   return sprint === n
 }
 
-function getAssignmentFile (assignment, next) {
+export function getFile (assignment, next) {
   const client = github.client(process.env['WTR_OAUTH_TOKEN'])
 
   return new Promise((resolve, reject) => {
@@ -36,7 +34,7 @@ function getAssignmentFile (assignment, next) {
   })
 }
 
-function getAssignmentFiles (assignments) {
+function getFiles (assignments) {
   return Promise.resolve(assignments)
 // return Promise.all([
 // ])
@@ -44,7 +42,7 @@ function getAssignmentFiles (assignments) {
 
 // Take an array of assignment.path and check to be sure it isn't all just
 // 'p' assignments, which are generic to all sprints
-function checkAssignments (assignments) {
+function check (assignments) {
   return new Promise((resolve, reject) => {
     const numericOnly = assignments.filter((path) => {
       const name = path.split('/').pop()
@@ -58,7 +56,7 @@ function checkAssignments (assignments) {
   })
 }
 
-function getAssignmentList (sprint) {
+export function getList (sprint) {
   const client = github.client(process.env['WTR_OAUTH_TOKEN'])
 
   return new Promise((resolve, reject) => {
