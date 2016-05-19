@@ -3,8 +3,8 @@ import getStudents from './students'
 import postAssignments from './postAssignments'
 
 function push (sprint, cohort) {
-  if (!process.env['WTR_OAUTH_TOKEN']) {
-    console.error('Please set WTR_OAUTH_TOKEN')
+  if (!process.env['WTR_ACCESS_TOKEN']) {
+    console.error('Please set WTR_ACCESS_TOKEN')
     return
   }
 

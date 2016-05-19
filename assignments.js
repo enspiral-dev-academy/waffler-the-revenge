@@ -1,7 +1,7 @@
 import github from 'octonode'
 
 export function get (sprint) {
-  console.log(`Getting assignments...`)
+  console.log('Getting assignments...')
   return getList(sprint)
     .then(check)
     .then(getFiles)
@@ -21,7 +21,7 @@ function matchSprint (sprint, assignment) {
 }
 
 export function getFile (assignment, next) {
-  const client = github.client(process.env['WTR_OAUTH_TOKEN'])
+  const client = github.client(process.env['WTR_ACCESS_TOKEN'])
 
   return new Promise((resolve, reject) => {
     client.repo('dev-academy-programme/curriculum-private')
@@ -50,23 +50,23 @@ function check (assignments) {
     })
 
     if (numericOnly.length === 0) {
-      return reject(new Error(`Couldn't find any assignments for that sprint.`))
+      return reject(new Error("Couldn't find any assignments for that sprint."))
     }
     return resolve(assignments)
   })
 }
 
 export function getList (sprint) {
-  const client = github.client(process.env['WTR_OAUTH_TOKEN'])
+  const client = github.client(process.env['WTR_ACCESS_TOKEN'])
 
   return new Promise((resolve, reject) => {
     client.repo('dev-academy-programme/curriculum-private')
       .contents('assignments', (err, assignments) => {
         if (err) {
-          return reject(new Error(`Couldn't get the assignments from the curriculum repo.`))
+          return reject(new Error("Couldn't get the assignments from the curriculum repo."))
         }
         if (assignments.length === 0) {
-          return reject(new Error(`No assignments found in that repo.`))
+          return reject(new Error('No assignments found in that repo.'))
         }
 
         const sprintAssignments = assignments
