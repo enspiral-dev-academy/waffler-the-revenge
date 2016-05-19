@@ -1,7 +1,7 @@
-import test from 'tape'
+import test from 'blue-tape'
 import nock from 'nock'
 
-import getAssignments from 'assignments'
+import getAssignments from '../assignments'
 import assignmentList from './json/assignmentList.json'
 import assignmentFile from './json/assignmentFile.json'
 
@@ -10,13 +10,15 @@ const repo = 'curriculum-private'
 const folder = 'assignments'
 
 const assignmentsContents = nock('https://api.github.com')
-  .get(`repos/${org}/${repo}/contents/${folder}`)
   .persist()
+  .get(`repos/${org}/${repo}/contents/${folder}`)
   .reply(200, assignmentList)
 
-test('get JSON samples', (t) => {
-  t.equal(1, files, 'JSON')
-  t.end()
+test('gets an array', (t) => {
+  return getAssignments(1)
+    .then((assignments) => {
+      t.equal(assignments, [])
+    })
 })
 
 nock.cleanAll()

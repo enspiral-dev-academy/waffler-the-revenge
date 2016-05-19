@@ -1,5 +1,15 @@
 import github from 'octonode'
 
+export default getAssignments
+
+function getAssignments (sprint) {
+  console.log(`Getting assignments...`)
+  return getAssignmentList(sprint)
+    .then(checkAssignments)
+    .then(getAssignmentFiles)
+    .then(sortAndProcess)
+}
+
 function matchSprint (sprint, assignment) {
   if (assignment.split('-')[0] === 'p') {
     return true
@@ -13,7 +23,7 @@ function matchSprint (sprint, assignment) {
 }
 
 function getAssignmentFile (assignment, next) {
-  const client = github.client(process.env['WTR_OAUTH_TOKEN']);
+  const client = github.client(process.env['WTR_OAUTH_TOKEN'])
 
   return new Promise((resolve, reject) => {
     client.repo('dev-academy-programme/curriculum-private')
@@ -28,28 +38,28 @@ function getAssignmentFile (assignment, next) {
 
 function getAssignmentFiles (assignments) {
   return Promise.resolve(assignments)
-  //return Promise.all([
-  //])
+// return Promise.all([
+// ])
 }
 
 // Take an array of assignment.path and check to be sure it isn't all just
 // 'p' assignments, which are generic to all sprints
 function checkAssignments (assignments) {
   return new Promise((resolve, reject) => {
-    const numericOnly = assignments.reject((path) => {
+    const numericOnly = assignments.filter((path) => {
       const name = path.split('/').pop()
-      return isNaN(parseInt(name[0]))
+      return !isNaN(parseInt(name[0]))
     })
 
     if (numericOnly.length === 0) {
       return reject(new Error(`Couldn't find any assignments for that sprint.`))
     }
-    return resolve (assignments)
+    return resolve(assignments)
   })
 }
 
 function getAssignmentList (sprint) {
-  const client = github.client(process.env['WTR_OAUTH_TOKEN']);
+  const client = github.client(process.env['WTR_OAUTH_TOKEN'])
 
   return new Promise((resolve, reject) => {
     client.repo('dev-academy-programme/curriculum-private')
@@ -77,13 +87,3 @@ function getAssignmentList (sprint) {
 function sortAndProcess (assignments) {
   return assignments
 }
-
-function getAssignments (sprint) {
-  console.log(`Getting assignments...`)
-  return getAssignmentList(sprint)
-    .then(checkAssignments)
-    .then(getAssignmentFiles)
-    .then(sortAndProcess)
-}
-
-export default getAssignments
