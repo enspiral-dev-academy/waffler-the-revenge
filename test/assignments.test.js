@@ -30,10 +30,22 @@ test('gets assignments for sprint', (t) => {
 })
 
 test('gets list of paths for sprint', (t) => {
-  const expected = [ 'assignments/1.0-how-to-waffle' ]
+  const expected = [
+    'assignments/1.0-how-to-waffle',
+    'assignments/p-check-ins',
+    'assignments/p-read-overview',
+    'assignments/p-weekly-practice'
+  ]
   return assignments.getList(1)
     .then((actual) => {
-      t.equal(actual, expected)
+      t.deepEqual(actual, expected)
+    })
+})
+
+test('check errors appropriately on nonexistent sprint', (t) => {
+  return assignments.getList(12)
+    .then((list) => {
+      return t.shouldFail(assignments.check(list), Error)
     })
 })
 

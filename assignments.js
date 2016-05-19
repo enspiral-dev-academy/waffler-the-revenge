@@ -34,7 +34,7 @@ export function getFile (assignment, next) {
   })
 }
 
-function getFiles (assignments) {
+export function getFiles (assignments) {
   return Promise.resolve(assignments)
 // return Promise.all([
 // ])
@@ -42,7 +42,7 @@ function getFiles (assignments) {
 
 // Take an array of assignment.path and check to be sure it isn't all just
 // 'p' assignments, which are generic to all sprints
-function check (assignments) {
+export function check (assignments) {
   return new Promise((resolve, reject) => {
     const numericOnly = assignments.filter((path) => {
       const name = path.split('/').pop()
@@ -82,6 +82,6 @@ export function getList (sprint) {
   })
 }
 
-function sortAndProcess (assignments) {
+export function sortAndProcess (assignments) {
   return assignments
 }
