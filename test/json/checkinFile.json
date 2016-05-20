@@ -1,0 +1,18 @@
+{
+    "_links": {
+        "git": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/blobs/022dbeb241be422ae0eb1f20f5db9695c51a1e59",
+        "html": "https://github.com/dev-academy-programme/curriculum-private/blob/master/assignments/p-check-ins/README.md",
+        "self": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/p-check-ins/README.md?ref=master"
+    },
+    "content": "IyBDaGVjayBpbiB+IDMwIG1pbnMKPkZhY2UtdGltZSBpcyBpbXBvcnRhbnQg\ndG9vCgotIFsgXSBBdHRlbmQgYSB2aWRlbyBjaGVjay1pbiB3aXRoIHlvdXIg\nY29ob3J0IGZhY2lsaXRhdG9yIDpkZWNpZHVvdXNfdHJlZTogKlRoaXMgaXMg\nYW4gaW1wb3J0YW50IGNoZWNrLWluLCAtIHlvdSBhcmUgZXhwZWN0ZWQgdG8g\nYXR0ZW5kIG9uZSBjaGVjay1pbiBwZXIgd2VlayAoeW91J3JlIHdlbGNvbWUg\ndG8gYm90aCkuIElmIHlvdSBtaXNzIGJvdGggd2Vla2x5IGNoZWNraW5zLCBw\nbGVhc2Ugc3RhdGUgd2h5IGluIGEgd2FmZmxlIGNvbW1lbnQgYmVsb3csIGFu\nZCBzdWJtaXQgdGhpcyBhc3NpZ25tZW50Ki4K\n",
+    "download_url": "https://raw.githubusercontent.com/dev-academy-programme/curriculum-private/master/assignments/p-check-ins/README.md?token=ASeG0WIdV1Q0nFpknSXfRhKF9vq9NgUgks5XPojBwA%3D%3D",
+    "encoding": "base64",
+    "git_url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/git/blobs/022dbeb241be422ae0eb1f20f5db9695c51a1e59",
+    "html_url": "https://github.com/dev-academy-programme/curriculum-private/blob/master/assignments/p-check-ins/README.md",
+    "name": "README.md",
+    "path": "assignments/p-check-ins/README.md",
+    "sha": "022dbeb241be422ae0eb1f20f5db9695c51a1e59",
+    "size": 342,
+    "type": "file",
+    "url": "https://api.github.com/repos/dev-academy-programme/curriculum-private/contents/assignments/p-check-ins/README.md?ref=master"
+}
