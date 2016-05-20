@@ -45,8 +45,52 @@ export function getFiles (assignments) {
   return Promise.all(assignments.map(getFile))
 }
 
-export function sortAndProcess (assignments) {
-  return assignments
+// In order to be posted in the right order, each issue should be created
+// in reverse order (1.9 before 1.0), and 'p' assignments last.
+export function sortAndProcess (files) {
+  const [generic, numeric] = splitByType(files)
+  return numeric
+    .map(convertVersions)
+    .sort(lexicographicalSort)
+    .map((file) => {
+      return file.join('.')
+    })
+}
+
+function splitByType (files) {
+  let generic = []
+  let numeric = []
+  files.forEach((file) => {
+    if (file[0] === 'p') {
+      generic.push(file)
+    }
+    numeric.push(file)
+  })
+  return [generic, numeric]
+}
+
+function convertVersions (file) {
+  return file
+    .split('.')
+    .map((s) => {
+      const n = parseInt(s, 10)
+      if (isNaN(n)) {
+        return s
+      }
+      return n
+    })
+}
+
+function lexicographicalSort (a, b) {
+  let first = a[0]
+  let second = b[0]
+
+  if (first === second) {
+    first = a[1]
+    second = b[1]
+  }
+  console.log(`FIRST: ${first} SECOND: ${second}`, first < second ? -1 : first > second ? 1 : 0)
+  return first < second ? -1 : first > second ? 1 : 0
 }
 
 function getFile (assignment) {
