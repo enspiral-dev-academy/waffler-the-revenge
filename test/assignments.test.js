@@ -53,11 +53,12 @@ test('assignments.splitList returns generic and numeric topics', (t) => {
   const list = [
     'assignments/1.0-how-to-waffle',
     'assignments/p-check-ins',
-    'x.x-racer-game'
+    'assignments/x.x-racer-game'
   ]
   const expected = {
     generic: [ 'assignments/p-check-ins' ],
-    numeric: [ 'assignments/1.0-how-to-waffle' ]
+    numeric: [ '1.0-how-to-waffle' ],
+    path: 'assignments'
   }
   return assignments.splitList(list)
     .then((actual) => {
@@ -67,10 +68,19 @@ test('assignments.splitList returns generic and numeric topics', (t) => {
 
 test('assignments.sort sorts by version number (descending)', (t) => {
   const topics = {
-    generic: ['p-check-ins'],
-    numeric: [ '1.11-asdf', '1.0-asdf', '1.2-asdf', '1.3-asdf', '1.1-asdf' ]
+    generic: ['assignments/p-check-ins'],
+    numeric: [ '1.0-asdf', '1.2-asdf', '1.11-asdf', '1.3-asdf', '1.1-asdf' ],
+    path: 'assignments'
   }
-  const expected = [ '1.11-asdf', '1.3-asdf', '1.2-asdf', '1.1-asdf', '1.0-asdf', 'p-check-ins' ]
+  const expected = [
+    'assignments/1.11-asdf',
+    'assignments/1.3-asdf',
+    'assignments/1.2-asdf',
+    'assignments/1.1-asdf',
+    'assignments/1.0-asdf',
+    'assignments/p-check-ins'
+  ]
+
   const actual = assignments.sort(topics)
   t.deepEqual(actual, expected)
   t.end()

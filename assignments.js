@@ -1,6 +1,6 @@
 import github from 'octonode'
 
-export function get (sprint) {
+export default function getAssignments (sprint) {
   console.log('Getting assignments...')
   return getList(sprint)
     .then(splitList)
@@ -32,9 +32,11 @@ export function splitList (assignments) {
       numeric: []
     }
     assignments.forEach((assignment) => {
-      const name = assignment.split('/').pop()
+      const parts = assignment.split('/')
+      const name = parts.pop()
+      topics.path = parts.join('/')
       if (!isNaN(name[0])) {
-        topics.numeric.push(assignment)
+        topics.numeric.push(name)
       }
       if (name[0] === 'p') {
         topics.generic.push(assignment)
@@ -56,7 +58,7 @@ export function sort (topics) {
     .sort(lexicographicalSort)
     .map((topic) => {
       const prefix = topic.prefix.join('.')
-      return `${prefix}-${topic.name}`
+      return `${topics.path}/${prefix}-${topic.name}`
     })
     .concat(topics.generic)
 }
@@ -87,6 +89,7 @@ function lexicographicalSort (a, b) {
 }
 
 export function getFiles (assignments) {
+  console.log(assignments)
   return Promise.all(assignments.map(getFile))
 }
 
