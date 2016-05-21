@@ -22,5 +22,3 @@ function postAssignments(client, assignments, students) {
     resolve(3)
   })
 }
-
-export default postAssignments
