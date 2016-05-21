@@ -5,6 +5,8 @@ import * as students from '../students'
 import teams from './json/teams.json'
 
 const cohort = 'waffler-test'
+const notAnOrg = '___probably_does_not_exist___'
+const noTeams = 'noteams'
 
 process.env['WTR_ACCESS_TOKEN'] = 1
 
@@ -13,6 +15,10 @@ test('mock API responses', (t) => {
     .persist()
     .get(`/orgs/${cohort}/teams?access_token=1`)
     .reply(200, teams)
+    .get(`/orgs/${notAnOrg}/teams?access_token=1`)
+    .reply(404)
+    .get(`/orgs/${noTeams}/teams?access_token=1`)
+    .reply(200, [])
   t.end()
 })
 
@@ -26,7 +32,10 @@ test('students.getTeam returns the correct team', (t) => {
     })
 })
 
-//test('assignments.splitList rejects on sprint with no assignments', (t) => {
-  //const list = [ 'p-check-ins' ]
-  //return t.shouldFail(assignments.splitList(list), Error)
-//})
+test('students.getTeam rejects if no org', (t) => {
+  return t.shouldFail(students.getTeam('___probably_does_not_exist___', Error))
+})
+
+test('students.getTeam rejects if no team', (t) => {
+  return t.shouldFail(students.getTeam(noTeams))
+})
