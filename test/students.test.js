@@ -46,8 +46,11 @@ test('students.getTeam rejects if no team', (t) => {
 })
 
 test('students.getTeamMembers returns the correct usernames', (t) => {
+  const team = {
+    id: 1
+  }
   const expected = ['richchurcher']
-  return students.getTeamMembers(1)
+  return students.getTeamMembers(team)
     .then((actual) => {
       t.deepEqual(actual, expected)
     })
