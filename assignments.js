@@ -49,7 +49,7 @@ export function splitList (assignments) {
 }
 
 // In order to be posted in the right order, each issue should be created
-// in reverse order (1.9 before 1.0), and 'p' assignments last.
+// in descending order (1.11 before 1.1), and 'p' assignments last.
 export function sort (topics) {
   return topics.numeric
     .map(convertVersions)

@@ -78,14 +78,14 @@ test('assignments.sort sorts by version number (descending)', (t) => {
 
 test('assignments.getFiles retrieves the correct contents', (t) => {
   const list = [
-    'assignments/p-check-ins',
-    'assignments/1.0-how-to-waffle'
+    'assignments/1.0-how-to-waffle',
+    'assignments/p-check-ins'
   ]
   const expected = getFiles
   return assignments.getFiles(list)
     .then((actual) => {
-      t.equal(actual[0].content, expected[0].content, 'generic')
-      t.equal(actual[1].content, expected[1].content, 'numeric')
+      t.equal(actual[0].content, expected[0].content, 'numeric')
+      t.equal(actual[1].content, expected[1].content, 'generic')
     })
 })
 
