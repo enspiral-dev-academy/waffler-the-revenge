@@ -33,10 +33,11 @@ export function splitList (assignments) {
     }
     assignments.forEach((assignment) => {
       const name = assignment.split('/').pop()
+      if (!isNaN(name[0])) {
+        topics.numeric.push(assignment)
+      }
       if (name[0] === 'p') {
         topics.generic.push(assignment)
-      } else {
-        topics.numeric.push(assignment)
       }
     })
     if (topics.numeric.length === 0) {
@@ -53,49 +54,40 @@ export function sort (topics) {
   return topics.numeric
     .map(convertVersions)
     .sort(lexicographicalSort)
-    .map((file) => {
-      return file.join('.')
+    .map((topic) => {
+      const prefix = topic.prefix.join('.')
+      return `${prefix}-${topic.name}`
     })
     .concat(topics.generic)
 }
 
-export function getFiles (assignments) {
-  return Promise.all(assignments.map(getFile))
-}
-
-function splitByType (files) {
-  let generic = []
-  let numeric = []
-  files.forEach((file) => {
-    if (file[0] === 'p') {
-      generic.push(file)
-    }
-    numeric.push(file)
-  })
-  return [generic, numeric]
-}
-
-function convertVersions (file) {
-  return file
+function convertVersions (fileName) {
+  const parts = fileName.split('-')
+  const prefix = parts[0]
     .split('.')
-    .map((s) => {
-      const n = parseInt(s, 10)
-      if (isNaN(n)) {
-        return s
-      }
-      return n
+    .map((n) => {
+      return parseInt(n, 10)
     })
+
+  return {
+    prefix: prefix,
+    name: parts.splice(1).join('-')
+  }
 }
 
 function lexicographicalSort (a, b) {
-  let first = a[0]
-  let second = b[0]
+  let first = a.prefix[0]
+  let second = b.prefix[0]
 
   if (first === second) {
-    first = a[1]
-    second = b[1]
+    first = a.prefix[1]
+    second = b.prefix[1]
   }
-  return first < second ? -1 : first > second ? 1 : 0
+  return first > second ? -1 : first < second ? 1 : 0
+}
+
+export function getFiles (assignments) {
+  return Promise.all(assignments.map(getFile))
 }
 
 function getFile (assignment) {

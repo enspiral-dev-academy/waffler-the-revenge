@@ -63,6 +63,21 @@ test('assignments.splitList returns generic and numeric topics', (t) => {
     })
 })
 
+test('assignments.sort sorts by version number (descending)', (t) => {
+  const topics = {
+    generic: ['p-check-ins'],
+    numeric: [ '1.11-asdf', '1.0-asdf', '1.2-asdf', '1.3-asdf', '1.1-asdf' ]
+  }
+  const expected = [ '1.11-asdf', '1.3-asdf', '1.2-asdf', '1.1-asdf', '1.0-asdf', 'p-check-ins' ]
+  const actual = assignments.sort(topics)
+  t.deepEqual(actual, expected)
+  t.end()
+})
+
+test('assignments.sort only returns generic or numeric assignments', (t) => {
+  t.end()
+})
+
 test('assignments.getFiles retrieves the correct contents', (t) => {
   const list = [
     'assignments/p-check-ins',
@@ -74,17 +89,6 @@ test('assignments.getFiles retrieves the correct contents', (t) => {
       t.equal(actual[0].content, expected[0].content, 'generic')
       t.equal(actual[1].content, expected[1].content, 'numeric')
     })
-})
-
-test('assignments.sort sorts by version number', (t) => {
-  const topics = {
-    generic: ['p-check-ins'],
-    numeric: [ '1.11-asdf', '1.0-asdf', '1.2-asdf', '1.3-asdf', '1.1-asdf' ]
-  }
-  const expected = [ '1.11-asdf', '1.3-asdf', '1.2-asdf', '1.1-asdf', '1.0-asdf', 'p-check-ins' ]
-  const actual = assignments.sort(topics)
-  t.deepEqual(actual, expected)
-  t.end()
 })
 
 test('teardown', (t) => {
