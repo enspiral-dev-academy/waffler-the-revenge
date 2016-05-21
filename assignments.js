@@ -3,9 +3,9 @@ import github from 'octonode'
 export function get (sprint) {
   console.log('Getting assignments...')
   return getList(sprint)
-    .then(checkList)
+    .then(splitList)
+    .then(sort)
     .then(getFiles)
-    .then(sortAndProcess)
 }
 
 export function getList (sprint) {
@@ -25,36 +25,42 @@ export function getList (sprint) {
   })
 }
 
-// Take an array of assignment.path and check to be sure it isn't all just
-// 'p' assignments, which are generic to all sprints
-export function checkList (assignments) {
+export function splitList (assignments) {
   return new Promise((resolve, reject) => {
-    const numericOnly = assignments.filter((path) => {
-      const name = path.split('/').pop()
-      return !isNaN(parseInt(name[0]))
-    })
-
-    if (numericOnly.length === 0) {
-      return reject(new Error('No assignments for that sprint.'))
+    const topics = {
+      generic: [],
+      numeric: []
     }
-    return resolve(assignments)
-  })
-}
+    assignments.forEach((assignment) => {
+      const name = assignment.split('/').pop()
+      if (name[0] === 'p') {
+        topics.generic.push(assignment)
+      } else {
+        topics.numeric.push(assignment)
+      }
+    })
+    if (topics.numeric.length === 0) {
+      return reject(new Error('No assignments found for that sprint.'))
+    }
 
-export function getFiles (assignments) {
-  return Promise.all(assignments.map(getFile))
+    return resolve(topics)
+  })
 }
 
 // In order to be posted in the right order, each issue should be created
 // in reverse order (1.9 before 1.0), and 'p' assignments last.
-export function sortAndProcess (files) {
-  const [generic, numeric] = splitByType(files)
-  return numeric
+export function sort (topics) {
+  return topics.numeric
     .map(convertVersions)
     .sort(lexicographicalSort)
     .map((file) => {
       return file.join('.')
     })
+    .concat(topics.generic)
+}
+
+export function getFiles (assignments) {
+  return Promise.all(assignments.map(getFile))
 }
 
 function splitByType (files) {
@@ -89,7 +95,6 @@ function lexicographicalSort (a, b) {
     first = a[1]
     second = b[1]
   }
-  console.log(`FIRST: ${first} SECOND: ${second}`, first < second ? -1 : first > second ? 1 : 0)
   return first < second ? -1 : first > second ? 1 : 0
 }
 

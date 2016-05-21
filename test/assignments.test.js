@@ -25,7 +25,7 @@ test('setup', (t) => {
   t.end()
 })
 
-test('gets assignments for sprint', (t) => {
+test.skip('gets assignments for sprint', (t) => {
   const expected = []
   return assignments.get(1)
     .then((actual) => {
@@ -44,27 +44,45 @@ test('gets list of paths for sprint', (t) => {
     })
 })
 
-test('assignments.checkList rejects on nonexistent sprint', (t) => {
-  return assignments.getList(12)
-    .then((list) => {
-      return t.shouldFail(assignments.checkList(list), Error)
-    })
+test('assignments.splitList rejects on sprint with no assignments', (t) => {
+  const list = [ 'p-check-ins' ]
+  return t.shouldFail(assignments.splitList(list), Error)
 })
 
-test('assignments.getFiles retrieves a list of files', (t) => {
-  const expected = getFiles
+test('assignments.splitList returns generic and numeric topics', (t) => {
+  const expected = {
+    generic: [ 'assignments/p-check-ins' ],
+    numeric: [ 'assignments/1.0-how-to-waffle' ]
+  }
   return assignments.getList(1)
-    .then(assignments.getFiles)
-    .then((actual) => {
-      t.equal(actual[0].content, expected[0].content, 'first element correct')
-      t.equal(actual[1].content, expected[1].content, 'second element correct')
+    .then((list) => {
+      return assignments.splitList(list)
+        .then((actual) => {
+          t.deepEqual(actual, expected)
+        })
     })
 })
 
-test.only('assignments.sortAndProcess sorts by version number', (t) => {
-  const unsorted = [ '1.11', '1.0', '1.2', 'p', '1.3', '1.1' ]
-  const expected = [ 'p', '1.0', '1.1', '1.2', '1.3', '1.11' ]
-  const actual = assignments.sortAndProcess(unsorted)
+test('assignments.getFiles retrieves the correct contents', (t) => {
+  const list = [
+    'assignments/p-check-ins',
+    'assignments/1.0-how-to-waffle'
+  ]
+  const expected = getFiles
+  return assignments.getFiles(list)
+    .then((actual) => {
+      t.equal(actual[0].content, expected[0].content, 'generic')
+      t.equal(actual[1].content, expected[1].content, 'numeric')
+    })
+})
+
+test('assignments.sort sorts by version number', (t) => {
+  const topics = {
+    generic: ['p-check-ins'],
+    numeric: [ '1.11-asdf', '1.0-asdf', '1.2-asdf', '1.3-asdf', '1.1-asdf' ]
+  }
+  const expected = [ '1.11-asdf', '1.3-asdf', '1.2-asdf', '1.1-asdf', '1.0-asdf', 'p-check-ins' ]
+  const actual = assignments.sort(topics)
   t.deepEqual(actual, expected)
   t.end()
 })
