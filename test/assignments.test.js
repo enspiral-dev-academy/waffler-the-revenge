@@ -50,16 +50,18 @@ test('assignments.splitList rejects on sprint with no assignments', (t) => {
 })
 
 test('assignments.splitList returns generic and numeric topics', (t) => {
+  const list = [
+    'assignments/1.0-how-to-waffle',
+    'assignments/p-check-ins',
+    'x.x-racer-game'
+  ]
   const expected = {
     generic: [ 'assignments/p-check-ins' ],
     numeric: [ 'assignments/1.0-how-to-waffle' ]
   }
-  return assignments.getList(1)
-    .then((list) => {
-      return assignments.splitList(list)
-        .then((actual) => {
-          t.deepEqual(actual, expected)
-        })
+  return assignments.splitList(list)
+    .then((actual) => {
+      t.deepEqual(actual, expected)
     })
 })
 
@@ -71,10 +73,6 @@ test('assignments.sort sorts by version number (descending)', (t) => {
   const expected = [ '1.11-asdf', '1.3-asdf', '1.2-asdf', '1.1-asdf', '1.0-asdf', 'p-check-ins' ]
   const actual = assignments.sort(topics)
   t.deepEqual(actual, expected)
-  t.end()
-})
-
-test('assignments.sort only returns generic or numeric assignments', (t) => {
   t.end()
 })
 
