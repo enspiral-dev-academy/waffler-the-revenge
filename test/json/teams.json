@@ -1,0 +1,24 @@
+[
+    {
+        "description": "",
+        "id": 2023625,
+        "members_url": "https://api.github.com/teams/2023625/members{/member}",
+        "name": "Teachers",
+        "permission": "pull",
+        "privacy": "secret",
+        "repositories_url": "https://api.github.com/teams/2023625/repos",
+        "slug": "teachers",
+        "url": "https://api.github.com/teams/2023625"
+    },
+    {
+        "description": "",
+        "id": 2023518,
+        "members_url": "https://api.github.com/teams/2023518/members{/member}",
+        "name": "waffler-test",
+        "permission": "pull",
+        "privacy": "closed",
+        "repositories_url": "https://api.github.com/teams/2023518/repos",
+        "slug": "waffler-test",
+        "url": "https://api.github.com/teams/2023518"
+    }
+]

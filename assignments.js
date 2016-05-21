@@ -89,7 +89,6 @@ function lexicographicalSort (a, b) {
 }
 
 export function getFiles (assignments) {
-  console.log(assignments)
   return Promise.all(assignments.map(getFile))
 }
 

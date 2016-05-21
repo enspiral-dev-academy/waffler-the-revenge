@@ -13,7 +13,7 @@ const folder = 'assignments'
 
 process.env['WTR_ACCESS_TOKEN'] = 1
 
-test('setup', (t) => {
+test('mock API reponses', (t) => {
   nock('https://api.github.com')
     .persist()
     .get(`/repos/${org}/${repo}/contents/${folder}?access_token=1`)
@@ -89,10 +89,4 @@ test('assignments.getFiles retrieves the correct contents', (t) => {
       t.equal(actual[0].content, expected[0].content, 'numeric')
       t.equal(actual[1].content, expected[1].content, 'generic')
     })
-})
-
-test('teardown', (t) => {
-  nock.cleanAll()
-  nock.restore()
-  t.end()
 })
