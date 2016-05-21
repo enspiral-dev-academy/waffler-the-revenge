@@ -36,6 +36,10 @@ export function getTeamMembers (team) {
         if (err) {
           return reject(new Error("Couldn't get members for the cohort team."))
         }
+        if (members.length === 0) {
+          return reject(new Error("No students on that team."))
+        }
+
         return resolve(members.map((member) => {
           return member.login
         }))

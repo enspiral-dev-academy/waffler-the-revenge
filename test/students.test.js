@@ -22,6 +22,8 @@ test('mock API responses', (t) => {
     .reply(200, [])
     .get('/teams/1/members?access_token=1')
     .reply(200, members)
+    .get('/teams/99/members?access_token=1')
+    .reply(200, [])
   t.end()
 })
 
@@ -49,4 +51,8 @@ test('students.getTeamMembers returns the correct usernames', (t) => {
     .then((actual) => {
       t.deepEqual(actual, expected)
     })
+})
+
+test('students.getTeamMembers rejects on an empty team', (t) => {
+  return t.shouldFail(students.getTeam(99))
 })
