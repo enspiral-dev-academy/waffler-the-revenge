@@ -27,16 +27,18 @@ export function getTeam (cohort) {
   })
 }
 
-//function getTeamMembers (client, team, next) {
-//console.log(`Getting the students for cohort with team id ${team}...`)
-//client.team(team)
-//.members((err, members) => {
-//if (err) {
-//return next(new Error(`Couldn't get members for the cohort team.`))
-//}
-//next(null, members.map((member) => {
-//return member.login
-//}))
-//})
-//}
+export function getTeamMembers (team) {
+  const client = github.client(process.env['WTR_ACCESS_TOKEN'])
 
+  return new Promise((resolve, reject) => {
+    client.team(team)
+      .members((err, members) => {
+        if (err) {
+          return reject(new Error("Couldn't get members for the cohort team."))
+        }
+        return resolve(members.map((member) => {
+          return member.login
+        }))
+      })
+  })
+}

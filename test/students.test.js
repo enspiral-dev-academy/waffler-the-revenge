@@ -3,6 +3,7 @@ import nock from 'nock'
 
 import * as students from '../students'
 import teams from './json/teams.json'
+import members from './json/members.json'
 
 const cohort = 'waffler-test'
 const notAnOrg = '___probably_does_not_exist___'
@@ -19,6 +20,8 @@ test('mock API responses', (t) => {
     .reply(404)
     .get(`/orgs/${noTeams}/teams?access_token=1`)
     .reply(200, [])
+    .get('/teams/1/members?access_token=1')
+    .reply(200, members)
   t.end()
 })
 
@@ -38,4 +41,12 @@ test('students.getTeam rejects if no org', (t) => {
 
 test('students.getTeam rejects if no team', (t) => {
   return t.shouldFail(students.getTeam(noTeams))
+})
+
+test('students.getTeamMembers returns the correct usernames', (t) => {
+  const expected = ['richchurcher']
+  return students.getTeamMembers(1)
+    .then((actual) => {
+      t.deepEqual(actual, expected)
+    })
 })
