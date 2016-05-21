@@ -25,14 +25,6 @@ test('setup', (t) => {
   t.end()
 })
 
-test.skip('gets assignments for sprint', (t) => {
-  const expected = []
-  return assignments.get(1)
-    .then((actual) => {
-      t.equal(actual, expected)
-    })
-})
-
 test('gets list of paths for sprint', (t) => {
   const expected = [
     'assignments/1.0-how-to-waffle',

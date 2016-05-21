@@ -1,6 +1,6 @@
 import github from 'octonode'
 
-export default function getAssignments (sprint) {
+export function getAssignments (sprint) {
   console.log('Getting assignments...')
   return getList(sprint)
     .then(splitList)
