@@ -51,3 +51,24 @@ test('post.createIssue rejects on bad repo', (t) => {
   }
   return t.shouldFail(post.createIssue(issueData))
 })
+
+test('post.createAndAssign creates an issue for each assignee', (t) => {
+  const issueData = {
+    owner: cohort,
+    repo: cohort,
+    issue: {
+      title: 'Wombats',
+      body: 'Wombats.'
+    }
+  }
+  const assignees = [ 'richchurcher', 'locksmithdon' ]
+  const expected = [
+    { body: issueData.issue.body },
+    { body: issueData.issue.body }
+  ]
+  return post.createAndAssign(issueData, assignees)
+    .then((actual) => {
+      t.equal(actual[0].body, expected[0].body)
+      t.equal(actual[1].body, expected[1].body)
+    })
+})

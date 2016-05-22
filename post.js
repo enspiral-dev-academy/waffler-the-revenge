@@ -7,6 +7,13 @@ export default function postAssignments (assignments, students) {
   })
 }
 
+export function createAndAssign (issueData, assignees) {
+  return Promise.all(assignees.map((assignee) => {
+    issueData.assignee = assignee
+    return createIssue(issueData)
+  }))
+}
+
 export function createIssue (issueData) {
   const client = github.client(process.env['WTR_ACCESS_TOKEN'])
 
