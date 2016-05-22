@@ -18,15 +18,16 @@ export default function postAssignments (assignments, students, cohort) {
 }
 
 export function createAndAssign (issueData, assignees) {
+  const client = github.client(process.env['WTR_ACCESS_TOKEN'])
+
   return Promise.all(assignees.map((assignee) => {
     issueData.issue.assignee = assignee
-    return createIssue(issueData)
+    return createIssue(issueData, client)
   }))
 }
 
-export function createIssue (issueData) {
-  const client = github.client(process.env['WTR_ACCESS_TOKEN'])
-
+export function createIssue (issueData, client) {
+  console.log(`${issueData.issue.title} ... ${issueData.issue.assignee}`)
   return new Promise((resolve, reject) => {
     client.repo(`${issueData.owner}/${issueData.repo}`)
       .issue(issueData.issue, (err, response) => {

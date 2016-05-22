@@ -74,7 +74,7 @@ export function makeIssues (assignments, sprint) {
   return assignments.map((assignment) => {
     const body = Buffer.from(assignment.content, 'base64').toString()
     let title = body.split('\n')[0]
-    title = title.replace(/[\W]*/, '')
+    title = title.replace(/[\W]*/, '').trim()
     return {
       title: title,
       body: body,
