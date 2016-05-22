@@ -6,6 +6,7 @@ export default function getAssignments (sprint) {
     .then(splitList)
     .then(sort)
     .then(getFiles)
+    .then(makeIssues)
 }
 
 export function getList (sprint) {
@@ -63,6 +64,22 @@ export function sort (topics) {
     .concat(topics.generic)
 }
 
+export function getFiles (assignments) {
+  return Promise.all(assignments.map(getFile))
+}
+
+export function makeIssues (assignments) {
+  return assignments.map((assignment) => {
+    const body = Buffer.from(assignment.content, 'base64').toString()
+    let title = body.split('\n')[0]
+    title = title.replace(/[\W]*/, '')
+    return {
+      title: title,
+      body: body
+    }
+  })
+}
+
 function convertVersions (fileName) {
   const parts = fileName.split('-')
   const prefix = parts[0]
@@ -86,10 +103,6 @@ function lexicographicalSort (a, b) {
     second = b.prefix[1]
   }
   return first > second ? -1 : first < second ? 1 : 0
-}
-
-export function getFiles (assignments) {
-  return Promise.all(assignments.map(getFile))
 }
 
 function getFile (assignment) {
