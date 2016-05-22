@@ -1,10 +1,20 @@
 import github from 'octonode'
 
-export default function postAssignments (assignments, students) {
+export default function postAssignments (assignments, students, cohort) {
   console.log('Posting assignments...')
-  return new Promise((resolve, reject) => {
-    resolve([assignments, students])
-  })
+  return Promise.all(
+    assignments
+      .map((assignment) => {
+        return createAndAssign({
+          owner: cohort,
+          repo: cohort,
+          issue: assignment
+        }, students)
+      })
+      .reduce((a, b) => {
+        return a.concat(b)
+      })
+  )
 }
 
 export function createAndAssign (issueData, assignees) {

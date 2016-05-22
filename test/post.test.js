@@ -62,13 +62,9 @@ test('post.createAndAssign creates an issue for each assignee', (t) => {
     }
   }
   const assignees = [ 'richchurcher', 'locksmithdon' ]
-  const expected = [
-    { body: issueData.issue.body },
-    { body: issueData.issue.body }
-  ]
+  const expected = assignees.length
   return post.createAndAssign(issueData, assignees)
     .then((actual) => {
-      t.equal(actual[0].body, expected[0].body)
-      t.equal(actual[1].body, expected[1].body)
+      t.equal(actual.length, expected)
     })
 })

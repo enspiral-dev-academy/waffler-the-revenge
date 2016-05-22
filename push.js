@@ -1,6 +1,6 @@
 import getAssignments from './assignments'
 import getStudents from './students'
-import postAssignments from './postAssignments'
+import postAssignments from './post'
 
 function push (sprint, cohort) {
   if (!process.env['WTR_ACCESS_TOKEN']) {
@@ -15,7 +15,7 @@ function push (sprint, cohort) {
     getStudents(cohort)
   ])
     .then(([assignments, students]) => {
-      return postAssignments(assignments, students)
+      return postAssignments(assignments, students, cohort)
     })
     .then(console.log)
     .catch(console.error)
