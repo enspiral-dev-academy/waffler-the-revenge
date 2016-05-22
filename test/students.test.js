@@ -29,7 +29,7 @@ test('mock API responses', (t) => {
 
 test('students.getTeam returns the correct team', (t) => {
   const expected = {
-    slug: 'waffler-test'
+    slug: cohort
   }
   return students.getTeam(cohort)
     .then((actual) => {

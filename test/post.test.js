@@ -2,6 +2,7 @@ import test from 'blue-tape'
 import nock from 'nock'
 
 import * as post from '../post'
+import createIssue from './json/createIssue.json'
 
 const cohort = 'waffler-test'
 
@@ -10,40 +11,43 @@ process.env['WTR_ACCESS_TOKEN'] = 1
 test('mock API responses', (t) => {
   nock('https://api.github.com')
     .persist()
-    .get(`/orgs/${cohort}/teams?access_token=1`)
-    .reply(200, teams)
+    .post(`/repos/${cohort}/${cohort}/issues?access_token=1`)
+    .reply(201, createIssue)
+    .post(`/repos/${cohort}/notarepo/issues?access_token=1`)
+    .reply(404)
   t.end()
 })
 
-test('students.getTeam returns the correct team', (t) => {
+test('post.createIssue creates an issue', (t) => {
+  const issueData = {
+    owner: cohort,
+    repo: cohort,
+    issue: {
+      title: 'Wombats',
+      body: 'Wombats.',
+      assignee: 'richchurcher'
+    }
+  }
   const expected = {
-    slug: 'waffler-test'
+    body: 'Wombats.',
+    assignee: {
+      login: 'richchurcher'
+    }
   }
-  return students.getTeam(cohort)
+  return post.createIssue(issueData)
     .then((actual) => {
-      t.equal(actual.slug, expected.slug)
+      t.equal(actual.body, expected.body, 'body correct')
+      t.equal(actual.assignee.login, expected.assignee.login, 'login correct')
     })
 })
 
-test('students.getTeam rejects if no org', (t) => {
-  return t.shouldFail(students.getTeam('___probably_does_not_exist___', Error))
-})
-
-test('students.getTeam rejects if no team', (t) => {
-  return t.shouldFail(students.getTeam(noTeams))
-})
-
-test('students.getTeamMembers returns the correct usernames', (t) => {
-  const team = {
-    id: 1
+test('post.createIssue rejects on bad repo', (t) => {
+  const issueData = {
+    owner: cohort,
+    repo: 'notarepo',
+    issue: {
+      title: 'A'
+    }
   }
-  const expected = ['richchurcher']
-  return students.getTeamMembers(team)
-    .then((actual) => {
-      t.deepEqual(actual, expected)
-    })
-})
-
-test('students.getTeamMembers rejects on an empty team', (t) => {
-  return t.shouldFail(students.getTeam(99))
+  return t.shouldFail(post.createIssue(issueData))
 })

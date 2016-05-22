@@ -1,0 +1,15 @@
+{
+    "assignee": {
+        "login": "richchurcher"
+    },
+    "body": "Wombats.",
+    "labels": [],
+    "milestone": null,
+    "repository_url": "https://api.github.com/repos/waffler-test/waffler-test",
+    "state": "open",
+    "title": "Wombats",
+    "updated_at": "2016-05-22T02:01:45Z",
+    "user": {
+        "login": "eda-waffler"
+    }
+}
