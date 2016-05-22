@@ -40,31 +40,6 @@ function isNumeric (assignment) {
   return !isNaN(name[0])
 }
 
-export function splitList (assignments) {
-  return new Promise((resolve, reject) => {
-    const topics = {
-      generic: [],
-      numeric: []
-    }
-    assignments.forEach((assignment) => {
-      const parts = assignment.split('/')
-      const name = parts.pop()
-      topics.path = parts.join('/')
-      if (!isNaN(name[0])) {
-        topics.numeric.push(name)
-      }
-      if (name[0] === 'p') {
-        topics.generic.push(assignment)
-      }
-    })
-    if (topics.numeric.length === 0) {
-      return reject(new Error('No assignments found for that sprint.'))
-    }
-
-    return resolve(topics)
-  })
-}
-
 export function sort (issues) {
   return issues
     .map(convertVersions)
