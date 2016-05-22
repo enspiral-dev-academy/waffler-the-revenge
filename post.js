@@ -13,13 +13,13 @@ export default function postAssignments (assignments, students, cohort) {
       })
       .reduce((a, b) => {
         return a.concat(b)
-      })
+      }, [])
   )
 }
 
 export function createAndAssign (issueData, assignees) {
   return Promise.all(assignees.map((assignee) => {
-    issueData.assignee = assignee
+    issueData.issue.assignee = assignee
     return createIssue(issueData)
   }))
 }

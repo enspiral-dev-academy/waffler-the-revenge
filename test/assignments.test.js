@@ -94,9 +94,10 @@ test('assignments.getFiles retrieves the correct contents', (t) => {
 test('assignments.makeIssues returns issue objects', (t) => {
   const expected = {
     title: 'Check in ~ 30 mins',
-    body: '# Check in ~ 30 mins\n>Face-time is important too\n\n- [ ] Attend a video check-in with your cohort facilitator :deciduous_tree: *This is an important check-in, - you are expected to attend one check-in per week (you\'re welcome to both). If you miss both weekly checkins, please state why in a waffle comment below, and submit this assignment*.\n'
+    body: '# Check in ~ 30 mins\n>Face-time is important too\n\n- [ ] Attend a video check-in with your cohort facilitator :deciduous_tree: *This is an important check-in, - you are expected to attend one check-in per week (you\'re welcome to both). If you miss both weekly checkins, please state why in a waffle comment below, and submit this assignment*.\n',
+    labels: [ 'sprint-1' ]
   }
-  const actual = assignments.makeIssues(getFiles)
+  const actual = assignments.makeIssues(getFiles, 1)
   t.deepEqual(actual[1], expected)
   t.end()
 })

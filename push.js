@@ -17,7 +17,9 @@ function push (sprint, cohort) {
     .then(([assignments, students]) => {
       return postAssignments(assignments, students, cohort)
     })
-    .then(console.log)
+    .then(() => {
+      console.log('Done.')
+    })
     .catch(console.error)
 }
 

@@ -6,7 +6,9 @@ export default function getAssignments (sprint) {
     .then(splitList)
     .then(sort)
     .then(getFiles)
-    .then(makeIssues)
+    .then((files) => {
+      return makeIssues(files, sprint)
+    })
 }
 
 export function getList (sprint) {
@@ -68,14 +70,15 @@ export function getFiles (assignments) {
   return Promise.all(assignments.map(getFile))
 }
 
-export function makeIssues (assignments) {
+export function makeIssues (assignments, sprint) {
   return assignments.map((assignment) => {
     const body = Buffer.from(assignment.content, 'base64').toString()
     let title = body.split('\n')[0]
     title = title.replace(/[\W]*/, '')
     return {
       title: title,
-      body: body
+      body: body,
+      labels: [ `sprint-${sprint}` ]
     }
   })
 }
