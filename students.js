@@ -13,6 +13,7 @@ export function getTeam (cohort) {
     client.org(cohort)
       .teams((err, teams) => {
         if (err) {
+          console.error(err)
           return reject(new Error("Can't get teams for that org."))
         }
         const team = teams.find((t) => {
