@@ -40,13 +40,6 @@ function isNumeric (assignment) {
   return !isNaN(name[0])
 }
 
-export function sort (issues) {
-  return issues
-    .map(convertVersions)
-    .sort(lexicographicalSort)
-    .map(cleanup)
-}
-
 export function getFiles (assignments) {
   return Promise.all(assignments.map(getFile))
 }
@@ -62,6 +55,13 @@ export function makeIssues (assignments, sprint) {
       labels: [ `sprint-${Math.floor(sprint)}` ]
     }
   })
+}
+
+export function sort (issues) {
+  return issues
+    .map(convertVersions)
+    .sort(lexicographicalSort)
+    .map(cleanup)
 }
 
 function convertVersions (issue) {

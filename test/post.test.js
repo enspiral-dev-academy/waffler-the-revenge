@@ -1,5 +1,6 @@
 import test from 'blue-tape'
 import nock from 'nock'
+import github from 'octonode'
 
 import * as post from '../post'
 import createIssue from './json/createIssue.json'
@@ -19,14 +20,10 @@ test('mock API responses', (t) => {
 })
 
 test('post.createIssue creates an issue', (t) => {
-  const issueData = {
-    owner: cohort,
-    repo: cohort,
-    issue: {
-      title: 'Wombats',
-      body: 'Wombats.',
-      assignee: 'richchurcher'
-    }
+  const issue = {
+    title: 'Wombats',
+    body: 'Wombats.',
+    assignee: 'richchurcher'
   }
   const expected = {
     body: 'Wombats.',
@@ -34,7 +31,8 @@ test('post.createIssue creates an issue', (t) => {
       login: 'richchurcher'
     }
   }
-  return post.createIssue(issueData)
+  const client = github.client(process.env['WTR_ACCESS_TOKEN'])
+  return post.createIssue(client, issue, cohort, cohort)
     .then((actual) => {
       t.equal(actual.body, expected.body, 'body correct')
       t.equal(actual.assignee.login, expected.assignee.login, 'login correct')
@@ -50,21 +48,4 @@ test('post.createIssue rejects on bad repo', (t) => {
     }
   }
   return t.shouldFail(post.createIssue(issueData))
-})
-
-test('post.createAndAssign creates an issue for each assignee', (t) => {
-  const issueData = {
-    owner: cohort,
-    repo: cohort,
-    issue: {
-      title: 'Wombats',
-      body: 'Wombats.'
-    }
-  }
-  const assignees = [ 'richchurcher', 'locksmithdon' ]
-  const expected = assignees.length
-  return post.createAndAssign(issueData, assignees)
-    .then((actual) => {
-      t.equal(actual.length, expected)
-    })
 })

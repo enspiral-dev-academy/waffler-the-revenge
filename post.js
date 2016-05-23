@@ -37,7 +37,7 @@ export function createIssues (queue, cohort, delay) {
   }, delay)
 }
 
-function createIssue (client, issue, owner, repo) {
+export function createIssue (client, issue, owner, repo) {
   return new Promise((resolve, reject) => {
     client.repo(`${owner}/${repo}`)
       .issue(issue, (err, response) => {

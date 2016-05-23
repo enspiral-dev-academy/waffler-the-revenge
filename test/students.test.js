@@ -38,7 +38,7 @@ test('students.getTeam returns the correct team', (t) => {
 })
 
 test('students.getTeam rejects if no org', (t) => {
-  return t.shouldFail(students.getTeam('___probably_does_not_exist___', Error))
+  return t.shouldFail(students.getTeam(notAnOrg, Error))
 })
 
 test('students.getTeam rejects if no team', (t) => {
