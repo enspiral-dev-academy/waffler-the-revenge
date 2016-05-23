@@ -1,7 +1,7 @@
 import minimist from 'minimist'
 import push from './push'
 
-function help() {
+function help () {
   const help = `
       Usage
         $ wtr <action>
@@ -17,25 +17,27 @@ function help() {
         $ wtr push -s 8 --cohort nikau-2016
         $ wtr push -s 1.1 -c tieke-2016
   `
-  console.log(help);
+  console.log(help)
 }
 
-function waffle() {
+function waffle () {
   const argv = minimist(process.argv, {
     alias: {
       s: 'sprint',
-      c: 'cohort'
+      c: 'cohort',
+      a: 'assign'
     },
     string: [
       'action',
-      'cohort'
+      'cohort',
+      'assign'
     ]
   })
 
   const action = argv._[2]
   switch (action) {
-    case 'push': 
-      push(argv.sprint, argv.cohort)
+    case 'push':
+      push(argv)
       break
 
     default:

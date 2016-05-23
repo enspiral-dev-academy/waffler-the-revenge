@@ -49,7 +49,7 @@ test('students.getTeamMembers returns the correct usernames', (t) => {
   const team = {
     id: 1
   }
-  const expected = ['richchurcher']
+  const expected = ['richchurcher', 'flargle', 'wargle']
   return students.getTeamMembers(team)
     .then((actual) => {
       t.deepEqual(actual, expected)
@@ -58,4 +58,15 @@ test('students.getTeamMembers returns the correct usernames', (t) => {
 
 test('students.getTeamMembers rejects on an empty team', (t) => {
   return t.shouldFail(students.getTeam(99))
+})
+
+test('students.getTeamMembers respects the -a option', (t) => {
+  const team = {
+    id: 1
+  }
+  const expected = ['flargle']
+  return students.getTeamMembers(team, 'flargle')
+    .then((actual) => {
+      t.deepEqual(actual, expected)
+    })
 })

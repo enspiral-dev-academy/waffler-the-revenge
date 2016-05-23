@@ -1,21 +1,11 @@
 [
     {
-        "avatar_url": "https://avatars.githubusercontent.com/u/171905?v=3",
-        "events_url": "https://api.github.com/users/richchurcher/events{/privacy}",
-        "followers_url": "https://api.github.com/users/richchurcher/followers",
-        "following_url": "https://api.github.com/users/richchurcher/following{/other_user}",
-        "gists_url": "https://api.github.com/users/richchurcher/gists{/gist_id}",
-        "gravatar_id": "",
-        "html_url": "https://github.com/richchurcher",
-        "id": 171905,
-        "login": "richchurcher",
-        "organizations_url": "https://api.github.com/users/richchurcher/orgs",
-        "received_events_url": "https://api.github.com/users/richchurcher/received_events",
-        "repos_url": "https://api.github.com/users/richchurcher/repos",
-        "site_admin": false,
-        "starred_url": "https://api.github.com/users/richchurcher/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/richchurcher/subscriptions",
-        "type": "User",
-        "url": "https://api.github.com/users/richchurcher"
+        "login": "richchurcher"
+    },
+    {
+        "login": "flargle"
+    },
+    {
+        "login": "wargle"
     }
 ]

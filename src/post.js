@@ -8,7 +8,8 @@ export default function postAssignments (assignments, students, cohort) {
     .reduce((a, b) => {
       return a.concat(b)
     }, [])
-  console.log(`Queue size: ${queue.length}.`)
+
+  console.log(`[ Issues: ${assignments.length} Students: ${students.length} Queue size: ${queue.length} ]`)
   return createIssues(queue, cohort, 2000)
 }
 

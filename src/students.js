@@ -1,9 +1,11 @@
 import github from 'octonode'
 
-export default function getStudents (cohort) {
+export default function getStudents (cohort, assign) {
   console.log('Getting students...')
   return getTeam(cohort)
-    .then(getTeamMembers)
+    .then((team) => {
+      return getTeamMembers(team, assign)
+    })
 }
 
 export function getTeam (cohort) {
@@ -27,7 +29,7 @@ export function getTeam (cohort) {
   })
 }
 
-export function getTeamMembers (team) {
+export function getTeamMembers (team, assign) {
   const client = github.client(process.env['WTR_ACCESS_TOKEN'])
 
   return new Promise((resolve, reject) => {
@@ -40,9 +42,16 @@ export function getTeamMembers (team) {
           return reject(new Error('No students on that team.'))
         }
 
-        return resolve(members.map((member) => {
+        const logins = members.map((member) => {
           return member.login
-        }))
+        })
+
+        if (assign) {
+          return resolve(logins.filter((login) => {
+            return assign.includes(login)
+          }))
+        }
+        return resolve(logins)
       })
   })
 }
