@@ -50,4 +50,4 @@ GitHub has a 5000 request/hour limit for authenticated users, but they also have
 
 ## Credits
 
-[Pete Jacobson] wrote [the original Waffler tool](). Pete is awesome. 
+[Pete Jacobson](https://github.com/peterjacobson) wrote [the original Waffler tool](https://github.com/dev-academy-programme/waffler). Pete is awesome.
