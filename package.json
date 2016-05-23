@@ -9,7 +9,7 @@
   "scripts": {
     "bin": "mkdir -p bin;mv lib/wtr.js bin;chmod a+x bin/wtr.js",
     "build": "npm run transpile; npm run bin",
-    "transpile": "babel . --ignore bin,lib,node_modules,test --out-dir lib",
+    "transpile": "babel src --ignore bin,lib,node_modules,test --out-dir lib",
     "prepublish": "npm run build",
     "test": "tape -r babel-register test/*.js | tap-spec"
   },

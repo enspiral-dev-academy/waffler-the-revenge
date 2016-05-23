@@ -1,7 +1,7 @@
 import test from 'blue-tape'
 import nock from 'nock'
 
-import * as assignments from '../assignments'
+import * as assignments from '../src/assignments'
 import assignmentList from './json/assignmentList.json'
 import waffleFile from './json/waffleFile.json'
 import checkinFile from './json/checkinFile.json'

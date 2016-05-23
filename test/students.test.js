@@ -1,7 +1,7 @@
 import test from 'blue-tape'
 import nock from 'nock'
 
-import * as students from '../students'
+import * as students from '../src/students'
 import teams from './json/teams.json'
 import members from './json/members.json'
 

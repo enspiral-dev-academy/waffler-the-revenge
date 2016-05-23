@@ -2,7 +2,7 @@ import test from 'blue-tape'
 import nock from 'nock'
 import github from 'octonode'
 
-import * as post from '../post'
+import * as post from '../src/post'
 import createIssue from './json/createIssue.json'
 
 const cohort = 'waffler-test'
