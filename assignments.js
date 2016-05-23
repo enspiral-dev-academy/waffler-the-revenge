@@ -59,7 +59,7 @@ export function makeIssues (assignments, sprint) {
     return {
       title: title,
       body: body,
-      labels: [ `sprint-${sprint}` ]
+      labels: [ `sprint-${Math.floor(sprint)}` ]
     }
   })
 }
@@ -109,6 +109,10 @@ function getFile (assignment) {
   })
 }
 
+function matchSingle (prefix, assignment) {
+  return assignment.split('-')[0] == prefix
+}
+
 function matchSprint (sprint, assignment) {
   if (assignment.split('-')[0] === 'p') {
     return true
@@ -122,6 +126,16 @@ function matchSprint (sprint, assignment) {
 }
 
 function sprintPaths (assignments, sprint) {
+  if (sprint.toString().match(/^[\d]+\.[\d]+$/)) {
+    const match = assignments.find((assignment) => {
+      return matchSingle(sprint, assignment.name)
+    })
+    if (match) {
+      return [ match.path ]
+    }
+    return Promise.reject(new Error('No match for that asssignment'))
+  }
+
   return assignments
     .filter((assignment) => {
       return matchSprint(sprint, assignment.name)
