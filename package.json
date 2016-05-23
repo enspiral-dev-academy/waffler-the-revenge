@@ -11,8 +11,6 @@
     "build": "npm run transpile; npm run bin",
     "transpile": "babel . --ignore bin,lib,node_modules,test --out-dir lib",
     "prepublish": "npm run build",
-    "prestart": "npm run build",
-    "start": "node bin/wtr.js",
     "test": "tape -r babel-register test/*.js | tap-spec"
   },
   "repository": {
