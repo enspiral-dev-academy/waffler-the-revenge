@@ -1,6 +1,6 @@
 {
   "name": "waffler-the-revenge",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Another take on EDA waffler",
   "main": "bin/wtr.js",
   "bin": {
