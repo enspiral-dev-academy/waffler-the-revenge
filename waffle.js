@@ -15,6 +15,7 @@ function help() {
         $ wtr push -s 9 -c kotare-2015
         $ wtr push --sprint 4 kereru-2016
         $ wtr push -s 8 --cohort nikau-2016
+        $ wtr push -s 1.1 -c tieke-2016
   `
   console.log(help);
 }
