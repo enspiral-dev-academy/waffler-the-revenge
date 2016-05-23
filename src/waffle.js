@@ -8,7 +8,8 @@ function help () {
 
       Options
         -s, --sprint  Sprint number
-        -c, --cohort  Cohort name (also org and repo name)
+        -c, --cohort  Team name (also org and repo name)
+        -a, --assign  Specify individual assignee
 
       Examples
         $ wtr push -s 1 -c kauri-2016
@@ -16,6 +17,7 @@ function help () {
         $ wtr push --sprint 4 kereru-2016
         $ wtr push -s 8 --cohort nikau-2016
         $ wtr push -s 1.1 -c tieke-2016
+        $ wtr push -s 3 -c nikau-2016 -a richchurcher
   `
   console.log(help)
 }

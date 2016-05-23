@@ -32,6 +32,14 @@ Posting individual version numbers works too, just specify the minor version:
     # Post a single issue for each member of foo-bar
     $ wtr push -s 1.0 -c foo-bar
 
+### Post to a single assignee
+
+To push issues to only one person, use the `-a` or `--assign` flag:
+
+    $ wtr push -s 1 -c foo-bar -a richchurcher
+
+This works with both major (all 1.x) and minor (e.g. 1.3 only) versions.
+
 ### Source READMEs
 
 Currently, the source location is hardwired to `dev-academy-programme` org, `curriculum-private` repo, `assignments` folder.
