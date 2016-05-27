@@ -1,8 +1,9 @@
 [
-  {
-    "content": "IyAxLjAgSG93IHRvIHdhZmZsZT8gQ2xpY2sgdGhlIG51bWJlciBpbiB0aGUg\ndG9wIGxlZnQgb2YgdGhpcyBjYXJkLi4uCgojIyBXZWxjb21lIHRvIHlvdXIg\nZmlyc3QgdGVzdCBhc3NpZ25tZW50IQoKLSBbIF0gWW91J3JlIHJlYWR5IHRv\nIHN0YXJ0IHdvcmsgb24gYW4gYXNzaWdubWVudD8gRHJhZyBpdCB0byB0aGUg\nJ0luIHByb2dyZXNzJyBjb2x1bW4uCi0gWyBdIFRoaXMgaXMgYSB0YXNrLiBj\naGVjayBpdCB3aGVuIGl0J3MgY29tcGxldGUuIFlvdSBjYW4gY2hlY2sgdGhp\ncyBvbmUgbm93LiBOaWNlLgotIFsgXSBXaGVuIGFsbCB0aGUgdGFza3MgYXJl\nIGNoZWNrZWQsIG1vdmUgdGhlIGFzc2lnbm1lbnQgdG8gdGhlICdSZXZpZXcn\nIGNvbHVtbiEgRG8gdGhhdCBub3cuIEF3ZXNvbWUuCi0gV2UnbGwgY2hlY2sg\neW91ciB3b3JrIHRoZW4gbW92ZSBpdCB0byB0aGUgJ0RvbmUnIGNvbHVtbiB3\naGVuIHdlJ3JlIHNhdGlzZmllZC4KLSBPay4gT250byB0aGUgcmVhbCBhc3Np\nZ25tZW50cyBub3cuLi4gaGF2ZSBmdW4hCg==\n"
-  },
-  {
-    "content": "IyBDaGVjayBpbiB+IDMwIG1pbnMKPkZhY2UtdGltZSBpcyBpbXBvcnRhbnQg\ndG9vCgotIFsgXSBBdHRlbmQgYSB2aWRlbyBjaGVjay1pbiB3aXRoIHlvdXIg\nY29ob3J0IGZhY2lsaXRhdG9yIDpkZWNpZHVvdXNfdHJlZTogKlRoaXMgaXMg\nYW4gaW1wb3J0YW50IGNoZWNrLWluLCAtIHlvdSBhcmUgZXhwZWN0ZWQgdG8g\nYXR0ZW5kIG9uZSBjaGVjay1pbiBwZXIgd2VlayAoeW91J3JlIHdlbGNvbWUg\ndG8gYm90aCkuIElmIHlvdSBtaXNzIGJvdGggd2Vla2x5IGNoZWNraW5zLCBw\nbGVhc2Ugc3RhdGUgd2h5IGluIGEgd2FmZmxlIGNvbW1lbnQgYmVsb3csIGFu\nZCBzdWJtaXQgdGhpcyBhc3NpZ25tZW50Ki4K\n"
-  }
+    {
+        "body": "# Check in ~ 30 mins\n>Face-time is important too\n\n- [ ] Attend a video check-in with your cohort facilitator :deciduous_tree: *This is an important check-in, - you are expected to attend one check-in per week (you're welcome to both). If you miss both weekly checkins, please state why in a waffle comment below, and submit this assignment*.\n",
+        "labels": [
+            "sprint-1"
+        ],
+        "title": "Check in ~ 30 mins"
+    }
 ]

@@ -1,4 +1,5 @@
 import github from 'octonode'
+import * as grr from 'github-readme-retriever'
 
 export default function getAssignments (sprint) {
   console.log('Getting assignments...')
@@ -12,24 +13,22 @@ export default function getAssignments (sprint) {
 }
 
 export function getList (sprint) {
-  const client = github.client(process.env['WTR_ACCESS_TOKEN'])
-
-  return new Promise((resolve, reject) => {
-    client.repo('dev-academy-programme/curriculum-private')
-      .contents('assignments', (err, assignments) => {
-        if (err) {
-          return reject(new Error("Couldn't get the assignments from the curriculum repo."))
-        }
-        if (assignments.length === 0) {
-          return reject(new Error('No assignments found in that repo.'))
-        }
-        return resolve(sprintPaths(assignments, sprint))
-      })
-  })
+  const config = {
+    owner: 'dev-academy-programme',
+    repo: 'curriculum-private',
+    path: 'assignments'
+  }
+  return grr.getList(config, process.env['WTR_ACCESS_TOKEN'])
+    .then((assignments) => {
+      const paths = sprintPaths(assignments, sprint)
+      return Promise.resolve(
+        Object.assign({ paths: paths }, config)
+      )
+    })
 }
 
 export function checkList (assignments) {
-  if (assignments.find(isNumeric)) {
+  if (assignments.paths.find(isNumeric)) {
     return Promise.resolve(assignments)
   }
   return Promise.reject(new Error('No assignments found for that sprint.'))
@@ -41,19 +40,15 @@ function isNumeric (assignment) {
 }
 
 export function getFiles (assignments) {
-  return Promise.all(assignments.map(getFile))
+  return grr.getFiles(assignments, process.env['WTR_ACCESS_TOKEN'])
+    .then((files) => {
+      return Promise.resolve(files)
+    })
 }
 
 export function makeIssues (assignments, sprint) {
   return assignments.map((assignment) => {
-    const body = Buffer.from(assignment.content, 'base64').toString()
-    let title = body.split('\n')[0]
-    title = title.replace(/[\W]*/, '').trim()
-    return {
-      title: title,
-      body: body,
-      labels: [ `sprint-${Math.floor(sprint)}` ]
-    }
+    return Object.assign({ labels: [ `sprint-${Math.floor(sprint)}` ] }, assignment)
   })
 }
 
@@ -94,53 +89,37 @@ function cleanup (sortObject) {
   return sortObject.issue
 }
 
-function getFile (assignment) {
-  const client = github.client(process.env['WTR_ACCESS_TOKEN'])
-
-  return new Promise((resolve, reject) => {
-    client.repo('dev-academy-programme/curriculum-private')
-      .contents(`${assignment}/README.md`, (err, file) => {
-        if (err) {
-          console.log(err)
-          return reject(new Error(`Couldn't get assignment content for ${assignment}`))
-        }
-        return resolve(file)
-      })
-  })
-}
-
-function matchSingle (prefix, assignment) {
-  return assignment.split('-')[0] == prefix
+function matchSingle (sprint, assignment) {
+  const name = assignment.split('/').pop()
+  return name.split('-')[0] === sprint
 }
 
 function matchSprint (sprint, assignment) {
-  if (assignment.split('-')[0] === 'p') {
+  const name = assignment.split('/').pop()
+  if (name.split('-')[0] === 'p') {
     return true
   }
-  const prefix = assignment.split('.')[0]
+  const prefix = name.split('.')[0]
   const n = parseInt(prefix, 10)
   if (isNaN(n)) {
     return false
   }
-  return sprint === n
+  return sprint === prefix
 }
 
 function sprintPaths (assignments, sprint) {
   if (sprint.toString().match(/^[\d]+\.[\d]+$/)) {
-    const match = assignments.find((assignment) => {
-      return matchSingle(sprint, assignment.name)
+    const match = assignments.paths.find((path) => {
+      return matchSingle(sprint, path)
     })
     if (match) {
-      return [ match.path ]
+      return [ match ]
     }
     return Promise.reject(new Error('No match for that asssignment'))
   }
 
-  return assignments
-    .filter((assignment) => {
-      return matchSprint(sprint, assignment.name)
-    })
-    .map((assignment) => {
-      return assignment.path
+  return assignments.paths
+    .filter((path) => {
+      return matchSprint(sprint, path)
     })
 }

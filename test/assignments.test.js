@@ -26,18 +26,40 @@ test('mock API reponses', (t) => {
 })
 
 test('gets list of paths for sprint', (t) => {
-  const expected = [
-    'assignments/1.0-how-to-waffle',
-    'assignments/p-check-ins'
-  ]
-  return assignments.getList(1)
+  const expected = {
+    owner: org,
+    repo: repo,
+    path: folder,
+    paths: [
+      'assignments/1.0-how-to-waffle',
+      'assignments/p-check-ins'
+    ]
+  }
+  return assignments.getList('1')
+    .then((actual) => {
+      t.deepEqual(actual, expected)
+    })
+})
+
+test('gets path for single assignment', (t) => {
+  const expected = {
+    owner: org,
+    repo: repo,
+    path: folder,
+    paths: [
+      'assignments/1.0-how-to-waffle'
+    ]
+  }
+  return assignments.getList('1.0')
     .then((actual) => {
       t.deepEqual(actual, expected)
     })
 })
 
 test('assignments.checkList rejects on sprint with no assignments', (t) => {
-  const list = [ 'p-check-ins' ]
+  const list = {
+    paths: [ 'p-check-ins' ]
+  }
   return t.shouldFail(assignments.checkList(list), Error)
 })
 
@@ -64,25 +86,24 @@ test('assignments.sort sorts by version number (descending)', (t) => {
 })
 
 test('assignments.getFiles retrieves the correct contents', (t) => {
-  const list = [
-    'assignments/1.0-how-to-waffle',
-    'assignments/p-check-ins'
-  ]
+  const list = {
+    owner: org,
+    repo: repo,
+    path: folder,
+    paths: [
+      'assignments/p-check-ins'
+    ]
+  }
   const expected = getFiles
   return assignments.getFiles(list)
     .then((actual) => {
-      t.equal(actual[0].content, expected[0].content, 'numeric')
-      t.equal(actual[1].content, expected[1].content, 'generic')
+      t.equal(actual[0].body, expected[0].body)
     })
 })
 
 test('assignments.makeIssues returns issue objects', (t) => {
-  const expected = {
-    title: 'Check in ~ 30 mins',
-    body: '# Check in ~ 30 mins\n>Face-time is important too\n\n- [ ] Attend a video check-in with your cohort facilitator :deciduous_tree: *This is an important check-in, - you are expected to attend one check-in per week (you\'re welcome to both). If you miss both weekly checkins, please state why in a waffle comment below, and submit this assignment*.\n',
-    labels: [ 'sprint-1' ]
-  }
-  const actual = assignments.makeIssues(getFiles, 1)
-  t.deepEqual(actual[1], expected)
+  const expected = getFiles[0]
+  const actual = assignments.makeIssues(getFiles, '1')
+  t.deepEqual(actual[0], expected)
   t.end()
 })

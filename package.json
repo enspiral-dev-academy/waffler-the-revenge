@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/richchurcher/waffler-the-revenge#readme",
   "dependencies": {
+    "github-readme-retriever": "^0.1.5",
     "minimist": "^1.2.0",
     "octonode": "^0.7.5"
   },
