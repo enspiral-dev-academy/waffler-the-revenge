@@ -1,7 +1,6 @@
 import github from 'octonode'
 
 export default function getStudents (cohort, assign) {
-  console.log('Getting students...')
   return getTeam(cohort)
     .then((team) => {
       return getTeamMembers(team, assign)

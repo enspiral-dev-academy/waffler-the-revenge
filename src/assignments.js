@@ -1,8 +1,6 @@
-import github from 'octonode'
 import * as grr from 'github-readme-retriever'
 
 export default function getAssignments (sprint) {
-  console.log('Getting assignments...')
   return getList(sprint)
     .then(checkList)
     .then(getFiles)
@@ -21,15 +19,13 @@ export function getList (sprint) {
   return grr.getList(config, process.env['WTR_ACCESS_TOKEN'])
     .then((assignments) => {
       const paths = sprintPaths(assignments, sprint)
-      return Promise.resolve(
-        Object.assign({ paths: paths }, config)
-      )
+      return Object.assign({ paths: paths }, config)
     })
 }
 
 export function checkList (assignments) {
   if (assignments.paths.find(isNumeric)) {
-    return Promise.resolve(assignments)
+    return assignments
   }
   return Promise.reject(new Error('No assignments found for that sprint.'))
 }
@@ -42,7 +38,7 @@ function isNumeric (assignment) {
 export function getFiles (assignments) {
   return grr.getFiles(assignments, process.env['WTR_ACCESS_TOKEN'])
     .then((files) => {
-      return Promise.resolve(files)
+      return files
     })
 }
 

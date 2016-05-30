@@ -8,7 +8,7 @@ function push ({sprint, cohort, assign}) {
     return
   }
 
-  console.log(`Pushing sprint ${sprint} assignments to '${cohort}'...`)
+  console.log('Getting assignments and students...')
 
   Promise.all([
     getAssignments(sprint),

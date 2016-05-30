@@ -25,14 +25,15 @@ function help () {
 function waffle () {
   const argv = minimist(process.argv, {
     alias: {
-      s: 'sprint',
+      a: 'assign',
       c: 'cohort',
-      a: 'assign'
+      s: 'sprint'
     },
     string: [
       'action',
+      'assign',
       'cohort',
-      'assign'
+      'sprint'
     ]
   })
 
