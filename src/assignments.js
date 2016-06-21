@@ -1,7 +1,7 @@
 import * as grr from 'github-readme-retriever'
 
-export default function getAssignments (sprint) {
-  return getList(sprint)
+export default function getAssignments (sprint, branch) {
+  return getList(sprint, branch)
     .then(checkList)
     .then(getFiles)
     .then((files) => {
@@ -10,16 +10,17 @@ export default function getAssignments (sprint) {
     .then(sort)
 }
 
-export function getList (sprint) {
+export function getList (sprint, branch) {
   const config = {
     owner: 'dev-academy-programme',
     repo: 'curriculum-private',
-    path: 'assignments'
+    path: 'assignments',
+    branch: branch
   }
   return grr.getList(config, process.env['WTR_ACCESS_TOKEN'])
     .then((assignments) => {
       const paths = sprintPaths(assignments, sprint)
-      return Object.assign({ paths: paths }, config)
+      return Object.assign(assignments, { paths: paths })
     })
 }
 

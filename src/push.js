@@ -2,7 +2,7 @@ import getAssignments from './assignments'
 import getStudents from './students'
 import postAssignments from './post'
 
-function push ({sprint, cohort, assign}) {
+function push ({sprint, cohort, assign, branch}) {
   if (!process.env['WTR_ACCESS_TOKEN']) {
     console.error('Please set WTR_ACCESS_TOKEN')
     return
@@ -11,7 +11,7 @@ function push ({sprint, cohort, assign}) {
   console.log('Getting assignments and students...')
 
   Promise.all([
-    getAssignments(sprint),
+    getAssignments(sprint, branch),
     getStudents(cohort, assign)
   ])
     .then(([assignments, students]) => {
