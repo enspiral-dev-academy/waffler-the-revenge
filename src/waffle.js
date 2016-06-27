@@ -1,5 +1,6 @@
 import minimist from 'minimist'
 import push from './push'
+import label from './label'
 
 function help () {
   const help = `
@@ -20,6 +21,7 @@ function help () {
         $ wtr push -s 1.1 -c tieke-2016
         $ wtr push -s 3 -c nikau-2016 -a richchurcher
         $ wtr push -s 5 -c kotare-2016 -b alternate-curriculum
+        $ wtr label kahikatea-2016
   `
   console.log(help)
 }
@@ -46,6 +48,10 @@ function waffle () {
   switch (action) {
     case 'push':
       push(argv)
+      break
+
+    case 'label':
+      label(argv)
       break
 
     default:
