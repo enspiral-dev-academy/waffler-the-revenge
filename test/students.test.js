@@ -70,3 +70,21 @@ test('students.getTeamMembers respects the -a option', (t) => {
       t.deepEqual(actual, expected)
     })
 })
+
+test('students.getTeamMembers respects the -e option', t => {
+  const team = {
+    id: 1
+  }
+  const expected = ['richchurcher', 'flargle']
+  return students.getTeamMembers(team, null, 'wargle')
+    .then(actual => t.deepEqual(actual, expected))
+})
+
+test('students.getTeamMembers gives -e priority over -a', t =>{
+  const team = {
+    id: 1
+  }
+  const expected = ['richchurcher']
+  return students.getTeamMembers(team, 'richchurcher,flargle', 'flargle,wargle')
+    .then(actual => t.deepEqual(actual, expected))
+})
