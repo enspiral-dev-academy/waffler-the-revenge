@@ -23,7 +23,7 @@ function help () {
         $ wtr push -s 3 -c nikau-2016 -a richchurcher
         $ wtr push -s 5 -c kotare-2016 -b alternate-curriculum
         $ wtr push -s 2 -c roa-2015 -e richchurcher
-        $ wtr label kahikatea-2016
+        $ wtr label -c kahikatea-2016
   `
   console.log(help)
 }
