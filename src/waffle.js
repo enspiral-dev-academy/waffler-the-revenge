@@ -8,10 +8,11 @@ function help () {
         $ wtr <action>
 
       Options
-        -s, --sprint  Sprint number
-        -c, --cohort  Team name (also org and repo name)
-        -a, --assign  Specify individual assignee
+        -a, --assign  Specify individual assignee(s) (can be comma-separated list)
         -b, --branch  Specify source branch
+        -c, --cohort  Team name (also org and repo name)
+        -e, --except  Specify individuals NOT to assign (can be comma-separated list)
+        -s, --sprint  Sprint number
 
       Examples
         $ wtr push -s 1 -c kauri-2016
@@ -21,6 +22,7 @@ function help () {
         $ wtr push -s 1.1 -c tieke-2016
         $ wtr push -s 3 -c nikau-2016 -a richchurcher
         $ wtr push -s 5 -c kotare-2016 -b alternate-curriculum
+        $ wtr push -s 2 -c roa-2015 -e richchurcher
         $ wtr label kahikatea-2016
   `
   console.log(help)
@@ -32,6 +34,7 @@ function waffle () {
       a: 'assign',
       b: 'branch',
       c: 'cohort',
+      e: 'except',
       s: 'sprint'
 
     },
@@ -40,6 +43,7 @@ function waffle () {
       'assign',
       'branch',
       'cohort',
+      'except',
       'sprint'
     ]
   })
