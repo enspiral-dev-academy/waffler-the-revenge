@@ -21,7 +21,7 @@ the command
 
 will push one issue for each directory, for all users of team `foo-bar` from GitHub organisation `foo-bar` on repository `foo-bar`. The body of the first issue will be drawn from `1.0-introduction/README`, and the title of the issue will be taken from the first line of the same README.
 
-<img src="waffler.png" alt="Titles are taken from the first line of the README">
+![Titles are taken from the first line of the README](http://i.imgur.com/1sek5Hw.png)
 
 WTR will attempt to post the issues in reverse order, so that the highest version number shows up last when viewed.
 
