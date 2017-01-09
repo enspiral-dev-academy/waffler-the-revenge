@@ -38,7 +38,15 @@ To push issues to only one person, use the `-a` or `--assign` flag:
 
     $ wtr push -s 1 -c foo-bar -a richchurcher
 
-This works with both major (all 1.x) and minor (e.g. 1.3 only) versions.
+This works with both major (all 1.x) and minor (e.g. 1.3 only) versions. It can also be a comma-separated list of assignees (no spaces though).
+
+### Exclude an assignee
+
+To post to all but one assignee, use the `-e` or `--exclude` flag:
+
+    $ wtr push -s 1 -c foo-bar -e richchurcher
+
+This too can be a comma-separated list. Note that if a login appears in both `-e` and `-a` lists, exclude wins (the account will not be assigned anything).
 
 ### Source READMEs
 
